@@ -8,7 +8,16 @@ move_y = keyboard_check(vk_down) - keyboard_check(vk_up);
 //Set the direction that the player is facing depending on the input
 if (move_x != 0) image_xscale = player_scaling * sign(-move_x/abs(move_x));
 
-//Move the player
+//Setup the movement of the player
 move_x *= move_speed;
 move_y *= move_speed;
+
+//Verify the collision
+if (place_meeting(x, y, obj_obstacle_parent))
+{
+	move_x = 0;
+	move_y = 0;
+}
+
+//Move the player if there is no collision
 move_and_collide(move_x, move_y, obj_obstacle_parent);
