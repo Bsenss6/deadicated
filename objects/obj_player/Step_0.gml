@@ -12,12 +12,12 @@ if (move_x != 0) image_xscale = player_scaling * sign(-move_x/abs(move_x));
 move_x *= move_speed;
 move_y *= move_speed;
 
-//Verify the collision
+//Verify the collision, sets the movement to zero if there is a collision
 if (place_meeting(x, y, obj_obstacle_parent))
 {
 	move_x = 0;
 	move_y = 0;
 }
 
-//Move the player if there is no collision
+//Move the player
 move_and_collide(move_x, move_y, obj_obstacle_parent);
