@@ -1,3 +1,5 @@
+if (player_death) obj_game.alarm[0] = 1 * 60;
+
 //When exiting the room, the player wraps around
 move_wrap(1, 1, 0);
 

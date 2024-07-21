@@ -7,4 +7,4 @@ move_speed = 20;
 move_x = 0;
 move_y = 0;
 
-player_death = 0;
+player_death = false;
