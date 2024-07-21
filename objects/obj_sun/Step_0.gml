@@ -7,3 +7,4 @@ if (keyboard_check(vk_space) && sun_ready) {
 	sun_ready = false;
 	obj_sun.alarm[0] = 60 * 2; //2 seconds cooldown
 }
+//print(rad%(2*pi));
