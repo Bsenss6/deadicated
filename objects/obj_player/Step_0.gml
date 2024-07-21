@@ -16,8 +16,3 @@ move_y *= move_speed;
 
 //Move the player and check for collision
 move_and_collide(move_x, move_y, obj_obstacle_parent);
-
-//Check if the player is not in a shadow
-//switch (rectangle_in_rectangle(obj_shadow.)) {
-
-//}
