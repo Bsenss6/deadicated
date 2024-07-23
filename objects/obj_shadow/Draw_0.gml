@@ -1,4 +1,7 @@
+
+//Length of the shadow
 var shadow_scale = 1000;
+
 var x_shadow = shadow_scale * cos(obj_sun.rad);
 var y_shadow = shadow_scale * sin(obj_sun.rad);
 var x3 = 0;
