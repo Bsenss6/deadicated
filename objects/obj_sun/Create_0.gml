@@ -13,4 +13,4 @@ sun_ready = true;
 path_radius = 64;
 sleep_time = 0.5;
 
-mode = sun_mode.steps;
+mode = sun_mode.smooth;
