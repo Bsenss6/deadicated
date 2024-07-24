@@ -2,10 +2,10 @@
 x = room_width/2 + cos(rad) * path_radius;
 y = room_height/2 + sin(rad) * path_radius;
 
-if (keyboard_check(vk_space) && sun_ready) {//obj_player.speed == 0
+if (obj_player.move_x == 0 && obj_player.move_y == 0) {//keyboard_check(vk_space) && sun_ready
 	rad += rad_step;
-	sun_ready = false;
-	obj_sun.alarm[0] = 60 * sleep_time;
+	//sun_ready = false;
+	//obj_sun.alarm[0] = 60 * sleep_time;
 }
 //while (!sun_ready) {
 //time_source_start(_time_source);
