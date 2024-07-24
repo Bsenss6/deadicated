@@ -35,6 +35,7 @@
   "name":"deadicated",
   "resources":[
     {"id":{"name":"obj_block","path":"objects/obj_block/obj_block.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_circle","path":"objects/obj_circle/obj_circle.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
     {"id":{"name":"obj_object_parent","path":"objects/obj_object_parent/obj_object_parent.yy",},},
@@ -44,7 +45,6 @@
     {"id":{"name":"obj_sun","path":"objects/obj_sun/obj_sun.yy",},},
     {"id":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
-    {"id":{"name":"Object11","path":"objects/Object11/Object11.yy",},},
     {"id":{"name":"Dannick","path":"rooms/Dannick/Dannick.yy",},},
     {"id":{"name":"Etienne","path":"rooms/Etienne/Etienne.yy",},},
     {"id":{"name":"Helene","path":"rooms/Helene/Helene.yy",},},
