@@ -6,7 +6,7 @@ surface_set_target(shadow_surface);
 draw_clear_alpha(c_black, 0);
 
 //Length of the shadow
-var shadow_scale = 1000;
+var shadow_scale = 10000;
 
 gpu_set_fog(true, c_black, 0, 1);
 with(obj_object_parent){
