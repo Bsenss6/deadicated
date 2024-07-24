@@ -10,8 +10,8 @@ var shadow_scale = 1000;
 
 gpu_set_fog(true, c_black, 0, 1);
 with(obj_object_parent){
-	var sx = (room_width/2)-mouse_x;
-	var sy = (room_height/2)-mouse_y;
+	var sx = (room_width/2) - shadow_scale*cos(obj_sun.rad);
+	var sy = (room_height/2) - shadow_scale*sin(obj_sun.rad);
 	draw_sprite_pos(sprite_index, image_index, 
 		x-sprite_xoffset-sx,	y-sprite_yoffset-sy, 
 		x+sprite_xoffset-sx,	y-sprite_yoffset-sy, 
