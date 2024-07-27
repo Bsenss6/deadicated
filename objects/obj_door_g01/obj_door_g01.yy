@@ -5,7 +5,8 @@
   "managed":true,
   "name":"obj_door_g01",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interact_parent","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"propertyId":{"name":"text_room","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_gathering01",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interact_parent","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"propertyId":{"name":"room_id","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_gathering01",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interact_parent","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"propertyId":{"name":"room_text","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Go to Gathering level 1",},
   ],
   "parent":{
     "name":"Objects",
