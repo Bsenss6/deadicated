@@ -6,6 +6,6 @@ y_start = 832;
 x_offset = 0;
 y_offset = 0;
 
-wobble_speed = 1;
-wobble_x_movement = 100;
-wobble_y_movement = 250;
+wobble_speed = 2;
+wobble_x_movement = 50;
+wobble_y_movement = 100;
