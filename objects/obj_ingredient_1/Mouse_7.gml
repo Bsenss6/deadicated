@@ -1,3 +1,3 @@
-/// @description Drop block
+/// @description Drop piece on grid
 
-handle_left_released(is_grid_placeable, set_grid_cell_values, 1);
+handle_left_released(ingredient_cells);

@@ -35,16 +35,68 @@ function get_cell_idx_y()
 // Event handlers     //
 ////////////////////////
 
-/// @param _fn_is_mouse_click_ignored {Function} Takes the x and y cell coordinates
-///        of the mouse on this piece and returns whether the click should be ignored,
-///        depending on the shape of this piece.
-/// @param _fn_set_grid_cell_values {Function} Sets the given value on the grid,
-///        following thisi shape's cell occupancy.
+function is_mouse_click_ignored(_mouse_cx, _mouse_cy, _ingredient_cells=[])
+{
+	return _ingredient_cells[_mouse_cy][_mouse_cx] == 0;
+}
+
+function is_out_of_grid(_cx, _cy, _ingredient_cells)
+{
+	// Too much left or up
+	if (_cx < 0 || _cy < 0) {
+		return true;
+	}
+
+	var _grid_height = array_length(obj_grid.cells);
+	for (var _j = 0; _j < array_length(_ingredient_cells); _j += 1) {
+		// Too much down
+		if ((_cy + _j) >= _grid_height) {
+			return true;
+		}
+
+		var _grid_width = array_length(obj_grid.cells[_j]);
+		for (var _i = 0; _i < array_length(ingredient_cells[_j]); _i += 1) {
+			// Too much right
+			if ((_cx+_i) >= _grid_width) {
+				return true;
+			}
+			// Cell occupied
+			if ((_ingredient_cells[_j][_i]) && (obj_grid.cells[_cy+_j][_cx+_i] != 0)) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+
+function set_grid_empty(_cx, _cy, _ingredient_cells)
+{
+	for (var _j = 0; _j < array_length(_ingredient_cells); _j += 1) {
+		for (var _i = 0; _i < array_length(_ingredient_cells[_j]); _i += 1) {
+			if (_ingredient_cells[_j][_i]) {
+				obj_grid.cells[_cy+_j][_cx+_i] = 0;
+			}
+		}
+	}
+}
+
+function set_grid_occupied(_cx, _cy, _ingredient_cells)
+{
+	for (var _j = 0; _j < array_length(_ingredient_cells); _j += 1) {
+		for (var _i = 0; _i < array_length(_ingredient_cells[_j]); _i += 1) {
+			obj_grid.cells[_cy+_j][_cx+_i] = _ingredient_cells[_j][_i];
+		}
+	}
+}
+
+
 /// @description Start dragging block with mouse
-function handle_left_pressed(_fn_is_mouse_click_ignored, _fn_set_grid_cell_values) {
+function handle_left_pressed(_ingredient_cells=[])
+{
 	var _mouse_cx = floor((mouse_x - x) / obj_grid.cell_size); // cx for cell index x
 	var _mouse_cy = floor((mouse_y - y) / obj_grid.cell_size);
-	if (_fn_is_mouse_click_ignored(_mouse_cx, _mouse_cy))
+	if (is_mouse_click_ignored(_mouse_cx, _mouse_cy, _ingredient_cells))
 	{
 		return;
 	}
@@ -54,7 +106,7 @@ function handle_left_pressed(_fn_is_mouse_click_ignored, _fn_set_grid_cell_value
 	{
 		var _cx = get_cell_idx_x();
 		var _cy = get_cell_idx_y();
-		_fn_set_grid_cell_values(_cx, _cy, 0);
+		set_grid_empty(_cx, _cy, _ingredient_cells);
 	}
 
 	// set mouse drag variables
@@ -65,14 +117,9 @@ function handle_left_pressed(_fn_is_mouse_click_ignored, _fn_set_grid_cell_value
 	mouse_offset_y = (mouse_y - y);
 }
 
-/// @param _fn_is_grid_placeable {Function} Takes the x and y cell coordinates
-///        of the piece on the grid and returns whether the piece can be placed
-///        on the grid.
-/// @param _fn_set_grid_cell_values {Function} Sets the given value on the grid,
-///        following this shape's cell occupancy.
-/// @param _cell_value {Real} The value to set the occupied cells with.
+
 /// @description Handles the Left Release event for dropping the piece.
-function handle_left_released(_fn_is_grid_placeable, _fn_set_grid_cell_values, _cell_value)
+function handle_left_released(_ingredient_cells=[])
 {
 	// Ignore unrelated ingredients
 	if (!dragging)
@@ -85,7 +132,7 @@ function handle_left_released(_fn_is_grid_placeable, _fn_set_grid_cell_values, _
 	var _cy = get_cell_idx_y();
 
 	// Tile block to grid
-	if (_fn_is_grid_placeable(_cx, _cy))
+	if (is_out_of_grid(_cx, _cy, _ingredient_cells))
 	{
 		x = start_x;
 		y = start_y;
@@ -93,7 +140,7 @@ function handle_left_released(_fn_is_grid_placeable, _fn_set_grid_cell_values, _
 	else
 	{
 		// set grid cells occupied
-		_fn_set_grid_cell_values(_cx, _cy, _cell_value);
+		set_grid_occupied(_cx, _cy, _ingredient_cells);
 	
 		// place on grid
 		x = _cx * obj_grid.cell_size + obj_grid.x;

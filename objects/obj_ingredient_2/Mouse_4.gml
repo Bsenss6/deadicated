@@ -1,3 +1,3 @@
-/// @description Start dragging block with mouse
+/// @description Start dragging the piece with mouse
 
-handle_left_pressed(is_mouse_click_ignored, set_grid_cell_values);
+handle_left_pressed(ingredient_cells);
