@@ -140,6 +140,11 @@ function handle_left_pressed(_ingredient_cells=[])
 		var _cy = get_cell_idx_y();
 		set_grid_empty(_cx, _cy, _ingredient_cells);
 	}
+	else
+	{
+		// Leave in place a new object
+		instance_create_layer(x, y, layer, object_index)
+	}
 
 	// set mouse drag variables
 	dragging = true;
@@ -166,8 +171,7 @@ function handle_left_released(_ingredient_cells=[])
 	// Tile block to grid
 	if (!is_placeable_on_grid(_cx, _cy, _ingredient_cells))
 	{
-		x = start_x;
-		y = start_y;
+		instance_destroy();
 	}
 	else
 	{
