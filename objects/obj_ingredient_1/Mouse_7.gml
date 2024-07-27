@@ -6,6 +6,8 @@ var _cell_size = 64;
 mouse_offset_x = 0;
 mouse_offset_y = 0;
 
+dragging = false;
+
 // Tile block to grid
 if ((x < (obj_grid.x - (_cell_size / 2))) ||
 	(y < (obj_grid.y - (_cell_size / 2))) ||

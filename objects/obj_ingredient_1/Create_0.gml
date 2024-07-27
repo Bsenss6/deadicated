@@ -4,3 +4,5 @@ mouse_offset_y = 0;
 
 start_x = x;
 start_y = y;
+
+dragging = false
