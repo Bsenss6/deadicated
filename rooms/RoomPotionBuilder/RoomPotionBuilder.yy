@@ -8,9 +8,9 @@
   "instanceCreationOrder":[
     {"name":"inst_35A03322","path":"rooms/RoomPotionBuilder/RoomPotionBuilder.yy",},
     {"name":"inst_354C618B","path":"rooms/RoomPotionBuilder/RoomPotionBuilder.yy",},
-    {"name":"inst_44816661","path":"rooms/RoomPotionBuilder/RoomPotionBuilder.yy",},
     {"name":"inst_453856A6","path":"rooms/RoomPotionBuilder/RoomPotionBuilder.yy",},
     {"name":"inst_CB69B05","path":"rooms/RoomPotionBuilder/RoomPotionBuilder.yy",},
+    {"name":"inst_44816661","path":"rooms/RoomPotionBuilder/RoomPotionBuilder.yy",},
   ],
   "isDnd":false,
   "layers":[

@@ -42,6 +42,9 @@ function get_mouse_idx_y()
 	return floor((mouse_y - y) / obj_grid.cell_size);
 }
 
+/// @param _ingredient_cells {Array<Array<Real>>} arrangement of this
+///        piece's cells
+/// @description A mouse click is ignored if it falls on the empty part of a piece.
 function is_mouse_click_ignored(_ingredient_cells=[])
 {
 	var _mouse_cx = get_mouse_idx_x();
@@ -49,52 +52,69 @@ function is_mouse_click_ignored(_ingredient_cells=[])
 	return _ingredient_cells[_mouse_cy][_mouse_cx] == 0;
 }
 
-function is_out_of_grid(_cx, _cy, _ingredient_cells)
+/// @param _cx {Real} piece's x location in grid coordinates
+/// @param _cy {Real} piece's y location in grid coordinates
+/// @param _ingredient_cells {Array<Array<Real>>} arrangement of this
+///        piece's cells
+/// @description Verifies whether the piece can be placed on the grid.
+function is_placeable_on_grid(_cx, _cy, _ingredient_cells)
 {
 	// Too much left or up
 	if (_cx < 0 || _cy < 0) {
-		return true;
+		return false;
 	}
 
 	var _grid_height = array_length(obj_grid.cells);
 	for (var _j = 0; _j < array_length(_ingredient_cells); _j += 1) {
 		// Too much down
 		if ((_cy + _j) >= _grid_height) {
-			return true;
+			return false;
 		}
 
 		var _grid_width = array_length(obj_grid.cells[_j]);
 		for (var _i = 0; _i < array_length(ingredient_cells[_j]); _i += 1) {
 			// Too much right
 			if ((_cx+_i) >= _grid_width) {
-				return true;
+				return false;
 			}
 			// Cell occupied
-			if ((_ingredient_cells[_j][_i]) && (obj_grid.cells[_cy+_j][_cx+_i] != 0)) {
-				return true;
+			if ((_ingredient_cells[_j][_i] != 0) && (obj_grid.cells[_cy+_j][_cx+_i] != 0)) {
+				return false;
 			}
 		}
 	}
 
-	return false;
+	return true;
 }
 
+/// @param _cx {Real} piece's x location in grid coordinates
+/// @param _cy {Real} piece's y location in grid coordinates
+/// @param _ingredient_cells {Array<Array<Real>>} arrangement of this
+///        piece's cells
+/// @description Verifies whether the piece can be placed on the grid.
 function set_grid_empty(_cx, _cy, _ingredient_cells)
 {
 	for (var _j = 0; _j < array_length(_ingredient_cells); _j += 1) {
 		for (var _i = 0; _i < array_length(_ingredient_cells[_j]); _i += 1) {
-			if (_ingredient_cells[_j][_i]) {
+			if (_ingredient_cells[_j][_i] != 0) {
 				obj_grid.cells[_cy+_j][_cx+_i] = 0;
 			}
 		}
 	}
 }
 
+/// @param _cx {Real} piece's x location in grid coordinates
+/// @param _cy {Real} piece's y location in grid coordinates
+/// @param _ingredient_cells {Array<Array<Real>>} arrangement of this
+///        piece's cells
+/// @description Sets the grid's cells as occupied by this piece.
 function set_grid_occupied(_cx, _cy, _ingredient_cells)
 {
 	for (var _j = 0; _j < array_length(_ingredient_cells); _j += 1) {
 		for (var _i = 0; _i < array_length(_ingredient_cells[_j]); _i += 1) {
-			obj_grid.cells[_cy+_j][_cx+_i] = _ingredient_cells[_j][_i];
+			if (_ingredient_cells[_j][_i] != 0) {
+				obj_grid.cells[_cy+_j][_cx+_i] = _ingredient_cells[_j][_i];
+			}
 		}
 	}
 }
@@ -104,6 +124,7 @@ function set_grid_occupied(_cx, _cy, _ingredient_cells)
 // Event handlers     //
 ////////////////////////
 
+/// @param _ingredient_cells {Array<Array<Real>>} arrangement of this piece's cells
 /// @description Start dragging block with mouse
 function handle_left_pressed(_ingredient_cells=[])
 {
@@ -128,6 +149,7 @@ function handle_left_pressed(_ingredient_cells=[])
 	mouse_offset_y = (mouse_y - y);
 }
 
+/// @param _ingredient_cells {Array<Array<Real>>} arrangement of this piece's cells
 /// @description Handles the Left Release event for dropping the piece.
 function handle_left_released(_ingredient_cells=[])
 {
@@ -142,7 +164,7 @@ function handle_left_released(_ingredient_cells=[])
 	var _cy = get_cell_idx_y();
 
 	// Tile block to grid
-	if (is_out_of_grid(_cx, _cy, _ingredient_cells))
+	if (!is_placeable_on_grid(_cx, _cy, _ingredient_cells))
 	{
 		x = start_x;
 		y = start_y;
@@ -165,6 +187,7 @@ function handle_left_released(_ingredient_cells=[])
 	layer = layer_get_id("LayerIngredientsStill");
 }
 
+/// @param _ingredient_cells {Array<Array<Real>>} arrangement of this piece's cells
 /// @description Handles the Right Pressed event for rotating the piece.
 function handle_right_pressed(_ingredient_cells=[])
 {

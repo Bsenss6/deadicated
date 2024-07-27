@@ -10,7 +10,7 @@
   "managed":true,
   "name":"obj_ingredient_1",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient_abstract","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"resource":{"name":"obj_ingredient_abstract","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_1_rot1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient_abstract","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"resource":{"name":"obj_ingredient_1_rot1","path":"objects/obj_ingredient_1_rot1/obj_ingredient_1_rot1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_1_rot1",},
   ],
   "parent":{
     "name":"alchemy",
