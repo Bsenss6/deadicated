@@ -43,6 +43,7 @@
     {"id":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},},
     {"id":{"name":"obj_ingredient_1","path":"objects/obj_ingredient_1/obj_ingredient_1.yy",},},
     {"id":{"name":"obj_ingredient_2","path":"objects/obj_ingredient_2/obj_ingredient_2.yy",},},
+    {"id":{"name":"obj_ingredient_abstract","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},},
     {"id":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},},
     {"id":{"name":"obj_object_parent","path":"objects/obj_object_parent/obj_object_parent.yy",},},
     {"id":{"name":"obj_obstacle_parent","path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},},
