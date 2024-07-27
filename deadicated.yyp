@@ -77,7 +77,6 @@
     {"id":{"name":"spr_cell_ingredient_2_rot1","path":"sprites/spr_cell_ingredient_2_rot1/spr_cell_ingredient_2_rot1.yy",},},
     {"id":{"name":"spr_cell_ingredient_2","path":"sprites/spr_cell_ingredient_2/spr_cell_ingredient_2.yy",},},
     {"id":{"name":"spr_cell_ingredient_3","path":"sprites/spr_cell_ingredient_3/spr_cell_ingredient_3.yy",},},
-    {"id":{"name":"spr_circle","path":"sprites/spr_circle/spr_circle.yy",},},
     {"id":{"name":"spr_compass","path":"sprites/spr_compass/spr_compass.yy",},},
     {"id":{"name":"spr_grid","path":"sprites/spr_grid/spr_grid.yy",},},
     {"id":{"name":"spr_main","path":"sprites/spr_main/spr_main.yy",},},
@@ -89,8 +88,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"RoomPotionBuilder","path":"rooms/RoomPotionBuilder/RoomPotionBuilder.yy",},},
+    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"rm_gathering01","path":"rooms/rm_gathering01/rm_gathering01.yy",},},
     {"roomId":{"name":"rm_lobby","path":"rooms/rm_lobby/rm_lobby.yy",},},
   ],
