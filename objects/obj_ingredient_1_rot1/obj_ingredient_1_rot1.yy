@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ingredient_2",
+  "%Name":"obj_ingredient_1_rot1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,9 +8,9 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ingredient_2",
+  "name":"obj_ingredient_1_rot1",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient_abstract","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"resource":{"name":"obj_ingredient_2_rot1","path":"objects/obj_ingredient_2_rot1/obj_ingredient_2_rot1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_2_rot1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient_abstract","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"resource":{"name":"obj_ingredient_1_rot2","path":"objects/obj_ingredient_1_rot2/obj_ingredient_1_rot2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_1_rot2",},
   ],
   "parent":{
     "name":"alchemy",
@@ -27,19 +27,24 @@
   "physicsGroup":1,
   "physicsKinematic":false,
   "physicsLinearDamping":0.1,
-  "physicsObject":false,
+  "physicsObject":true,
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":0.0,},
+    {"x":192.0,"y":0.0,},
+    {"x":192.0,"y":128.0,},
+    {"x":0.0,"y":128.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cell_ingredient_2",
-    "path":"sprites/spr_cell_ingredient_2/spr_cell_ingredient_2.yy",
+    "name":"spr_cell_ingredient_1_rot1",
+    "path":"sprites/spr_cell_ingredient_1_rot1/spr_cell_ingredient_1_rot1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

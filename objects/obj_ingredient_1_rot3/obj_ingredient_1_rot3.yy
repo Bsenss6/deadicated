@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ingredient_2",
+  "%Name":"obj_ingredient_1_rot3",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,9 +8,9 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ingredient_2",
+  "name":"obj_ingredient_1_rot3",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient_abstract","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"resource":{"name":"obj_ingredient_2_rot1","path":"objects/obj_ingredient_2_rot1/obj_ingredient_2_rot1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_2_rot1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient_abstract","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"resource":{"name":"obj_ingredient_1","path":"objects/obj_ingredient_1/obj_ingredient_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_1",},
   ],
   "parent":{
     "name":"alchemy",
@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cell_ingredient_2",
-    "path":"sprites/spr_cell_ingredient_2/spr_cell_ingredient_2.yy",
+    "name":"spr_cell_ingredient_1_rot3",
+    "path":"sprites/spr_cell_ingredient_1_rot3/spr_cell_ingredient_1_rot3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

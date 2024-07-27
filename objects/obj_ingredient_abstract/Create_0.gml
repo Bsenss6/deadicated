@@ -30,13 +30,22 @@ function get_cell_idx_y()
 	return round((y - obj_grid.y) / obj_grid.cell_size);
 }
 
-
-////////////////////////
-// Event handlers     //
-////////////////////////
-
-function is_mouse_click_ignored(_mouse_cx, _mouse_cy, _ingredient_cells=[])
+/** Return the x index of the cell the mouse aligns to on the piece. */
+function get_mouse_idx_x()
 {
+	return floor((mouse_x - x) / obj_grid.cell_size);
+}
+
+/** Return the y index of the cell the mouse aligns to on the piece. */
+function get_mouse_idx_y()
+{
+	return floor((mouse_y - y) / obj_grid.cell_size);
+}
+
+function is_mouse_click_ignored(_ingredient_cells=[])
+{
+	var _mouse_cx = get_mouse_idx_x();
+	var _mouse_cy = get_mouse_idx_y();
 	return _ingredient_cells[_mouse_cy][_mouse_cx] == 0;
 }
 
@@ -91,12 +100,14 @@ function set_grid_occupied(_cx, _cy, _ingredient_cells)
 }
 
 
+////////////////////////
+// Event handlers     //
+////////////////////////
+
 /// @description Start dragging block with mouse
 function handle_left_pressed(_ingredient_cells=[])
 {
-	var _mouse_cx = floor((mouse_x - x) / obj_grid.cell_size); // cx for cell index x
-	var _mouse_cy = floor((mouse_y - y) / obj_grid.cell_size);
-	if (is_mouse_click_ignored(_mouse_cx, _mouse_cy, _ingredient_cells))
+	if (is_mouse_click_ignored(_ingredient_cells))
 	{
 		return;
 	}
@@ -116,7 +127,6 @@ function handle_left_pressed(_ingredient_cells=[])
 	mouse_offset_x = (mouse_x - x);
 	mouse_offset_y = (mouse_y - y);
 }
-
 
 /// @description Handles the Left Release event for dropping the piece.
 function handle_left_released(_ingredient_cells=[])
@@ -153,4 +163,16 @@ function handle_left_released(_ingredient_cells=[])
 	mouse_offset_x = 0;
 	mouse_offset_y = 0;
 	layer = layer_get_id("LayerIngredientsStill");
+}
+
+/// @description Handles the Right Pressed event for rotating the piece.
+function handle_right_pressed(_ingredient_cells=[])
+{
+	if (dragging || placed ||
+		is_mouse_click_ignored(_ingredient_cells))
+	{
+		return;
+	}
+
+	instance_change(next_roration_obj, true);
 }
