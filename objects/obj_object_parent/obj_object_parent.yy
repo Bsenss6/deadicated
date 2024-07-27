@@ -6,8 +6,8 @@
   "name":"obj_object_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Blocks",
+    "path":"folders/Objects/Blocks.yy",
   },
   "parentObjectId":{
     "name":"obj_obstacle_parent",

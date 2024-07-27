@@ -6,8 +6,8 @@
   "name":"obj_circle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Blocks",
+    "path":"folders/Objects/Blocks.yy",
   },
   "parentObjectId":{
     "name":"obj_object_parent",

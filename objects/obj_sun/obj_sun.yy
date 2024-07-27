@@ -10,8 +10,8 @@
   "name":"obj_sun",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Lighting",
+    "path":"folders/Objects/Lighting.yy",
   },
   "parentObjectId":null,
   "persistent":false,
