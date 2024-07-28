@@ -6,7 +6,12 @@
   ],
   "managed":true,
   "name":"obj_ingredient_2",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"sprite_rot0","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"spr_cell_ingredient_2","path":"sprites/spr_cell_ingredient_2/spr_cell_ingredient_2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_cell_ingredient_2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"sprite_rot1","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"spr_cell_ingredient_2_rot1","path":"sprites/spr_cell_ingredient_2_rot1/spr_cell_ingredient_2_rot1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_cell_ingredient_2_rot1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"sprite_rot2","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"spr_cell_ingredient_2","path":"sprites/spr_cell_ingredient_2/spr_cell_ingredient_2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_cell_ingredient_2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"sprite_rot3","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"spr_cell_ingredient_2_rot1","path":"sprites/spr_cell_ingredient_2_rot1/spr_cell_ingredient_2_rot1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_cell_ingredient_2_rot1",},
+  ],
   "parent":{
     "name":"alchemy",
     "path":"folders/Objects/alchemy.yy",
@@ -32,7 +37,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_cell_ingredient_2",
+    "path":"sprites/spr_cell_ingredient_2/spr_cell_ingredient_2.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

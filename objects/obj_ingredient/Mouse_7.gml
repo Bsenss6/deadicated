@@ -1,12 +1,36 @@
 /// @description Drop block
 
-/*
-// Define cell shape of this ingredient
-var _ingredient_cells = [[1, 0, 0], [1, 1, 1]];
+// Ignore unrelated ingredients
+if (!dragging)
+{
+	return;
+}
 
-// And stats of this object;
-var _stats = [1, 1, 0, 0, 1];
+// Get coordinates of nearest grid cell
+var _cx = get_cell_idx_x();
+var _cy = get_cell_idx_y();
 
-// And call the parent's handler
-handle_left_released(_ingredient_cells, _stats);
-*/
+// Tile block to grid
+if (!is_placeable_on_grid(_cx, _cy))
+{
+	instance_destroy();
+}
+else
+{
+	// set grid cells occupied
+	set_grid_occupied(_cx, _cy);
+	
+	// add stats of this object to the grid stats
+	obj_grid.add_stats(stats);
+
+	// place on grid
+	x = _cx * obj_grid.cell_size + obj_grid.x;
+	y = _cy * obj_grid.cell_size + obj_grid.y;
+	placed = true;
+}
+
+// Reset dragging variables
+dragging = false;
+mouse_offset_x = 0;
+mouse_offset_y = 0;
+layer = layer_get_id("LayerIngredientsStill");

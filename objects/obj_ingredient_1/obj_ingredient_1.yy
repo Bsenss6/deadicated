@@ -7,7 +7,10 @@
   "managed":true,
   "name":"obj_ingredient_1",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"obj_ingredient_1_rot1","path":"objects/obj_ingredient_1_rot1/obj_ingredient_1_rot1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_1_rot1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"sprite_rot0","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"spr_cell_ingredient_1","path":"sprites/spr_cell_ingredient_1/spr_cell_ingredient_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_cell_ingredient_1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"sprite_rot1","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"spr_cell_ingredient_1_rot1","path":"sprites/spr_cell_ingredient_1_rot1/spr_cell_ingredient_1_rot1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_cell_ingredient_1_rot1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"sprite_rot2","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"spr_cell_ingredient_1_rot2","path":"sprites/spr_cell_ingredient_1_rot2/spr_cell_ingredient_1_rot2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_cell_ingredient_1_rot2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"sprite_rot3","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"spr_cell_ingredient_1_rot3","path":"sprites/spr_cell_ingredient_1_rot3/spr_cell_ingredient_1_rot3.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_cell_ingredient_1_rot3",},
   ],
   "parent":{
     "name":"alchemy",
@@ -34,7 +37,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_cell_ingredient_1",
+    "path":"sprites/spr_cell_ingredient_1/spr_cell_ingredient_1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

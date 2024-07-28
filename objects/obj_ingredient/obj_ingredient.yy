@@ -27,10 +27,21 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":0.0,},
+    {"x":32.0,"y":0.0,},
+    {"x":32.0,"y":32.0,},
+    {"x":0.0,"y":32.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"next_roration_obj","filters":[],"listItems":[],"multiselect":false,"name":"next_roration_obj","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"obj_ingredient","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"sprite_rot0","filters":[],"listItems":[],"multiselect":false,"name":"sprite_rot0","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"sprite_rot1","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"sprite_rot1","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"sprite_rot2","filters":[],"listItems":[],"multiselect":false,"name":"sprite_rot2","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"sprite_rot3","filters":[],"listItems":[],"multiselect":false,"name":"sprite_rot3","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

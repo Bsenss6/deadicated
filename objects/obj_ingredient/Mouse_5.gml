@@ -1,9 +1,16 @@
 /// @description Rotate the piece
 
-/*
-// Define cell shape of this ingredient
-var _ingredient_cells = [[1, 0, 0], [1, 1, 1]];
+if (dragging || placed || is_mouse_click_ignored())
+{
+	return;
+}
 
-// And call the parent's handler
-handle_right_pressed(_ingredient_cells);
-*/
+switch (rotation_stage) {
+	case 0: sprite_index = sprite_rot1; break;
+	case 1: sprite_index = sprite_rot2; break;
+	case 2: sprite_index = sprite_rot3; break;
+	case 3: sprite_index = sprite_rot0; break;
+}
+
+rotation_stage = ((rotation_stage + 1) % 4);
+ingredient_cells = array_rotate(ingredient_cells);
