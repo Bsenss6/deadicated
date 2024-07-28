@@ -1,6 +1,11 @@
 
 obj_game.copyInventory(obj_game.inventory_amounts ,obj_game.inventory_temp);
 
+if (spawn_location != noone) {
+	x = spawn_location.x;
+	y = spawn_location.y;
+}
+
 player_scaling = 0.1;
 
 image_xscale = player_scaling;

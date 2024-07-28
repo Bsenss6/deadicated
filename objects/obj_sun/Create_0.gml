@@ -8,7 +8,7 @@ enum sun_mode {
 }
 
 
-rad = 15*pi/8; //0 to 2pi
+rad = custom_rad; //0 to 2pi
 rad_step = 0.02; //steps of the sun
 sun_ready = true;
 path_radius = 64;
