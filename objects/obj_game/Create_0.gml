@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-#macro INVENTORY_LENGTH 13
+inventory_length = 13;
 
 enum items {
 	philosopher_stone,	//0
@@ -18,41 +18,61 @@ enum items {
 	drought_mimicry		//12
 }
 
-inventory_amounts = array_create(INVENTORY_LENGTH, 0);
+inventory_amounts = array_create(inventory_length, 0);
 
-function isInventoryEmpty() {
-	for (var i = 0; i < INVENTORY_LENGTH; i++) {
-		if (inventory_amounts[i] != 0)
+inventory_temp = array_create(inventory_length, 0);
+
+function copyInventory(src, dest) {
+	for (var i = 0; i < inventory_length; i++) {
+		dest[i] = src[i];
+	}
+}
+
+copyInventory(inventory_amounts, inventory_temp);
+
+function isInventoryEmpty(inv) {
+	for (var i = 0; i < inventory_length; i++) {
+		if (inv[i] != 0)
 			return false;
 	}
 	return true;
 }
 
-function getItemAmount(item) {
-	return inventory_amounts[item];
+
+function getDifferentItems(inv) {
+	var amount = 0;
+	for (var i = 0; i < inventory_length; i++) {
+			if (inv[i] != 0)
+				amount++;
+	}
+	return amount;
 }
 
-function setItemAmount(item,amount) {
-	inventory_amounts[item] = amount;
+function getItemAmount(inv, item) {
+	return inv[item];
 }
 
-function addItem(item) {
-	inventory_amounts[item]++;
+function setItemAmount(inv, item,amount) {
+	inv[item] = amount;
 }
 
-function removeItem(item) {
-	inventory_amounts[item]--;
+function addItem(inv, item) {
+	inv[item]++;
+}
+
+function removeItem(inv, item) {
+	inv[item]--;
 }
 
 
-function resetInventory() {
-	for (var i = 0; i < INVENTORY_LENGTH; i++) {
-		inventory_amounts[i] = 0;	
+function resetInventory(inv) {
+	for (var i = 0; i < inventory_length; i++) {
+		inv[i] = 0;	
 	}
 }
 
-function isItemPresent(item) {
-	return (inventory_amounts[item] != 0?true:false);
+function isItemPresent(inv, item) {
+	return (inv[item] != 0?true:false);
 }
 
 //function intToEnum(num) {
@@ -145,8 +165,8 @@ function toString(item) {
 	}
 }
 
-function printInventory() {
-	for (var i = 0; i < INVENTORY_LENGTH; i++) {
-		print(toString(i), ":", inventory_amounts[i]);
+function printInventory(inv) {
+	for (var i = 0; i < inventory_length; i++) {
+		print(toString(i), ":", inv[i]);
 	}
 }

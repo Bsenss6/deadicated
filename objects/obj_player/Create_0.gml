@@ -1,4 +1,6 @@
 
+obj_game.copyInventory(obj_game.inventory_amounts ,obj_game.inventory_temp);
+
 player_scaling = 0.1;
 
 image_xscale = player_scaling;

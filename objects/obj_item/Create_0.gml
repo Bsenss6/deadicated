@@ -2,6 +2,8 @@
 // You can write your code in this editor
 image_xscale = 0.3;
 image_yscale = 0.3;
+start_xscale = image_xscale;
+start_yscale = image_yscale;
 
 pickUp = false;
 
