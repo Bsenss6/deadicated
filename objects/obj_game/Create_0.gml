@@ -140,6 +140,8 @@ function toString(item) {
 		case 12:
 			return "drought_mimicry";
 			break;	
+		default:
+			print("ERROR: Item out of bound");
 	}
 }
 

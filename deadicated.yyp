@@ -89,6 +89,7 @@
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
     {"id":{"name":"spr_dragons_tongue","path":"sprites/spr_dragons_tongue/spr_dragons_tongue.yy",},},
     {"id":{"name":"spr_drought_mimicry","path":"sprites/spr_drought_mimicry/spr_drought_mimicry.yy",},},
+    {"id":{"name":"spr_error","path":"sprites/spr_error/spr_error.yy",},},
     {"id":{"name":"spr_flame_berry","path":"sprites/spr_flame_berry/spr_flame_berry.yy",},},
     {"id":{"name":"spr_grid","path":"sprites/spr_grid/spr_grid.yy",},},
     {"id":{"name":"spr_liquid_ice","path":"sprites/spr_liquid_ice/spr_liquid_ice.yy",},},

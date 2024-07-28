@@ -29,10 +29,16 @@ switch (mode) {
 		break;
 }
 
-x = lerp(x, obj_camera.view_width/2 + path_radius + cos(rad) * path_radius, 0.05);
-y = lerp(y, obj_camera.view_height/2 + sin(rad) * path_radius, 0.05);
+x = lerp(x, obj_camera.view_width - path_radius + cos(rad) * path_radius, 0.05);
+y = lerp(y, obj_camera.view_height - path_radius + sin(rad) * path_radius, 0.05);
 
 //draw_sprite(spr_sun,0, x, y)
 
-draw_sprite(spr_compass, 0, obj_camera.view_width/2, obj_camera.view_height/2 - path_radius);
-draw_sprite_ext(spr_sun, 0, x, y, 0.2, 0.2, 0, c_yellow, 1);
+draw_sprite(spr_compass, 0, 
+			obj_camera.view_width - path_radius * 2, obj_camera.view_height - path_radius * 2);
+draw_sprite_ext(spr_sun, 0,
+				x, y, 
+				0.2, 0.2, 
+				0, 
+				c_yellow, 
+				1);
