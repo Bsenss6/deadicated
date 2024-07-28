@@ -1,5 +1,13 @@
 /// @description Initialize variables
 
+enum STAT_ID {
+	BRILLIANCE, // 0
+	MAGIC,		// 1
+	PURITY, 	// 2
+	LIFE,		// 3
+	RICHNESS,	// 4
+}
+
 cell_number_x = 6;
 cell_number_y = 6;
 cell_size = 64;
@@ -7,7 +15,7 @@ cell_size = 64;
 
 /* cell content code:
 0: empty
-1: ingredient_1
+1: occupied
 */
 cells = [
 	[0, 0, 0, 0, 0, 0],
@@ -21,14 +29,21 @@ cells = [
 /* stat arrays:
 [name, target, current]
 */
-stats = [
-	["richness",   3, 0],
-	["brilliance", 0, 0],
-	["purity",     0, 0],
-	["magic",      2, 0],
-	["life",       2, 0],
-];
+stats = array_create(5);
+stats[STAT_ID.BRILLIANCE] = ["Brilliance", 0, 0];
+stats[STAT_ID.MAGIC] =		["Magic",      0, 0];
+stats[STAT_ID.PURITY] =		["Purity",     0, 0];
+stats[STAT_ID.LIFE]	=		["Life",       0, 0];
+stats[STAT_ID.RICHNESS] =	["Richness",   0, 0];
 
+
+/// @param _stat_id {STAT_ID} the id of the stat to update
+/// @param _target {Real} the new target value
+/// @description Set the target  value of the given stat.
+function set_stat_target(_stat_id, _target)
+{
+	stats[_stat_id][2] = _target;
+}
 
 /// @param _stats {Array<Real>} the stats of an ingredient to add to this grid's stats
 /// @description Adds the given stats to this grid's current stats.

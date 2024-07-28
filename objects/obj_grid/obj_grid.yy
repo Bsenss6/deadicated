@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_grid",
-    "path":"sprites/spr_grid/spr_grid.yy",
+    "name":"spr_grid_large",
+    "path":"sprites/spr_grid_large/spr_grid_large.yy",
   },
   "spriteMaskId":null,
   "visible":true,
