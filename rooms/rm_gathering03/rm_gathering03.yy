@@ -58,8 +58,8 @@
   ],
   "name":"rm_gathering03",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Gathering",
+    "path":"folders/Rooms/Gathering.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
