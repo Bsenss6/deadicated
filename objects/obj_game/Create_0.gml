@@ -55,49 +55,49 @@ function isItemPresent(item) {
 	return (inventory_amounts[item] != 0?true:false);
 }
 
-function intToEnum(num) {
-	switch (num) {
-		case 0:
-			return items.philosopher_stone;
-			break;
-		case 1:
-			return items.mercury;
-			break;
-		case 2:
-			return items.moonstone;
-			break;
-		case 3:
-			return items.crystalline_water;
-			break;
-		case 4:
-			return items.silver;
-			break;
-		case 5:
-			return items.mandragore;
-			break;
-		case 6:
-			return items.star_dust;
-			break;
-		case 7:
-			return items.liquid_ice;
-			break;
-		case 8:
-			return items.lucilum_fungus;
-			break;
-		case 9:
-			return items.comet_shard;
-			break;
-		case 10:
-			return items.dragons_tongue;
-			break;
-		case 11:
-			return items.flame_berry;
-			break;
-		case 12:
-			return items.drought_mimicry;
-			break;	
-	}
-}
+//function intToEnum(num) {
+//	switch (num) {
+//		case 0:
+//			return items.philosopher_stone;
+//			break;
+//		case 1:
+//			return items.mercury;
+//			break;
+//		case 2:
+//			return items.moonstone;
+//			break;
+//		case 3:
+//			return items.crystalline_water;
+//			break;
+//		case 4:
+//			return items.silver;
+//			break;
+//		case 5:
+//			return items.mandragore;
+//			break;
+//		case 6:
+//			return items.star_dust;
+//			break;
+//		case 7:
+//			return items.liquid_ice;
+//			break;
+//		case 8:
+//			return items.lucilum_fungus;
+//			break;
+//		case 9:
+//			return items.comet_shard;
+//			break;
+//		case 10:
+//			return items.dragons_tongue;
+//			break;
+//		case 11:
+//			return items.flame_berry;
+//			break;
+//		case 12:
+//			return items.drought_mimicry;
+//			break;	
+//	}
+//}
 
 function toString(item) {
 	switch (item) {
