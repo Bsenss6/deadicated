@@ -10,15 +10,15 @@
   "managed":true,
   "name":"obj_ingredient_1_rot3",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient_abstract","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",},"resource":{"name":"obj_ingredient_1","path":"objects/obj_ingredient_1/obj_ingredient_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"obj_ingredient_1_rot0","path":"objects/obj_ingredient_1_rot0/obj_ingredient_1_rot0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_1_rot0",},
   ],
   "parent":{
     "name":"alchemy",
     "path":"folders/Objects/alchemy.yy",
   },
   "parentObjectId":{
-    "name":"obj_ingredient_abstract",
-    "path":"objects/obj_ingredient_abstract/obj_ingredient_abstract.yy",
+    "name":"obj_ingredient_1",
+    "path":"objects/obj_ingredient_1/obj_ingredient_1.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

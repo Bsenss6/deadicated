@@ -1,3 +1,3 @@
 /// @description Drop piece on grid
 
-handle_left_released(ingredient_cells);
+handle_left_released(ingredient_cells, stats);

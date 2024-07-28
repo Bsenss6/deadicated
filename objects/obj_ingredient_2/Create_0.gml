@@ -5,7 +5,11 @@ event_inherited();
 
 // Define the child's variables
 
-ingredient_cells = [
-	[1, 1, 0],
-	[0, 1, 1],
-];
+/* Stats are:
+- richness
+- brilliance
+- purity
+- magic
+- life
+*/
+stats = [1, 0, 1, 0, 1];

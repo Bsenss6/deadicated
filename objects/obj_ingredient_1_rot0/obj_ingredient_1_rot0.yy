@@ -1,11 +1,14 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ingredient_1",
+  "%Name":"obj_ingredient_1_rot0",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ingredient_1",
+  "name":"obj_ingredient_1_rot0",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_ingredient","path":"objects/obj_ingredient/obj_ingredient.yy",},"propertyId":{"name":"next_roration_obj","path":"objects/obj_ingredient/obj_ingredient.yy",},"resource":{"name":"obj_ingredient_1_rot1","path":"objects/obj_ingredient_1_rot1/obj_ingredient_1_rot1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_ingredient_1_rot1",},
   ],
@@ -14,8 +17,8 @@
     "path":"folders/Objects/alchemy.yy",
   },
   "parentObjectId":{
-    "name":"obj_ingredient",
-    "path":"objects/obj_ingredient/obj_ingredient.yy",
+    "name":"obj_ingredient_1",
+    "path":"objects/obj_ingredient_1/obj_ingredient_1.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,7 +37,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_cell_ingredient_1",
+    "path":"sprites/spr_cell_ingredient_1/spr_cell_ingredient_1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

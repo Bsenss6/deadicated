@@ -126,7 +126,7 @@ function set_grid_occupied(_cx, _cy, _ingredient_cells)
 
 /// @param _ingredient_cells {Array<Array<Real>>} arrangement of this piece's cells
 /// @description Start dragging block with mouse
-function handle_left_pressed(_ingredient_cells=[])
+function handle_left_pressed(_ingredient_cells=[], _stats=[])
 {
 	if (is_mouse_click_ignored(_ingredient_cells))
 	{
@@ -139,6 +139,9 @@ function handle_left_pressed(_ingredient_cells=[])
 		var _cx = get_cell_idx_x();
 		var _cy = get_cell_idx_y();
 		set_grid_empty(_cx, _cy, _ingredient_cells);
+		
+		// remove stats of this object to the grid stats
+		obj_grid.remove_stats(_stats);
 	}
 	else
 	{
@@ -155,8 +158,9 @@ function handle_left_pressed(_ingredient_cells=[])
 }
 
 /// @param _ingredient_cells {Array<Array<Real>>} arrangement of this piece's cells
+/// @param _stats {Array<Real>} stats added by this ingredient
 /// @description Handles the Left Release event for dropping the piece.
-function handle_left_released(_ingredient_cells=[])
+function handle_left_released(_ingredient_cells=[], _stats=[])
 {
 	// Ignore unrelated ingredients
 	if (!dragging)
@@ -177,6 +181,9 @@ function handle_left_released(_ingredient_cells=[])
 	{
 		// set grid cells occupied
 		set_grid_occupied(_cx, _cy, _ingredient_cells);
+		
+		// add stats of this object to the grid stats
+		obj_grid.add_stats(_stats);
 	
 		// place on grid
 		x = _cx * obj_grid.cell_size + obj_grid.x;
