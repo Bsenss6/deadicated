@@ -34,8 +34,12 @@ if (object_exists(obj_player)) {
 
 	//draw_sprite(spr_sun,0, x, y)
 
-	draw_sprite(spr_compass, 0, 
-				obj_camera.view_width - path_radius * 2, obj_camera.view_height - path_radius * 2);
+	draw_sprite_ext(spr_compass, 0, 
+					obj_camera.view_width - path_radius * 2, obj_camera.view_height - path_radius * 2,
+					0.5, 0.5, 
+					0, 
+					c_white, 
+					1);
 	draw_sprite_ext(spr_sun, 0,
 					x, y, 
 					0.2, 0.2, 
