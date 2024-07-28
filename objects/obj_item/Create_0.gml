@@ -4,6 +4,7 @@ image_xscale = 0.3;
 image_yscale = 0.3;
 start_xscale = image_xscale;
 start_yscale = image_yscale;
+step = 0;
 
 pickUp = false;
 
