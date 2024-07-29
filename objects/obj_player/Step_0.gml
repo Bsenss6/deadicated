@@ -12,7 +12,13 @@ if (player_death) {
 	
 
 	if (move_x != 0 || move_y != 0) {
-		sprite_index = spr_player_walk; 
+		if (sign(move_y) == sign(-1)) {
+			sprite_index = spr_player_walk_up;
+		} else if (sign(move_y) == sign(1)) {
+			sprite_index = spr_player_walk_down ;
+		} else {
+			sprite_index = spr_player_walk; 
+		}
 	} else {
 		sprite_index = spr_player_idle;
 	}
