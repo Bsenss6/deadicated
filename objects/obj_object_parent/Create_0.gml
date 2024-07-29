@@ -11,7 +11,10 @@
 //		}
 //	}
 //}
+var obj_id = id;
 with (instance_create_layer(x,y,"Instances", obj_shadow_block)) {
-	image_xscale = (obj_object_parent.sprite_width / sprite_width);
+	print(obj_id.isCircle?"Oui":"Non");
+	image_alpha = obj_id.isCircle?0.5:0;
+	image_xscale = obj_id.sprite_width / sprite_width;
 	image_yscale = 10000;
 }
