@@ -130,6 +130,7 @@
     {"id":{"name":"spr_sun","path":"sprites/spr_sun/spr_sun.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_water","path":"sprites/spr_water/spr_water.yy",},},
+    {"id":{"name":"spr_wood","path":"sprites/spr_wood/spr_wood.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

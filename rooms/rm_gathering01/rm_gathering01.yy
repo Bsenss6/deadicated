@@ -6,11 +6,9 @@
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_281FC8B","path":"rooms/rm_gathering01/rm_gathering01.yy",},
     {"name":"inst_2B17B20E","path":"rooms/rm_gathering01/rm_gathering01.yy",},
     {"name":"inst_F06D2A3","path":"rooms/rm_gathering01/rm_gathering01.yy",},
     {"name":"inst_6EC554D7","path":"rooms/rm_gathering01/rm_gathering01.yy",},
-    {"name":"inst_FB483F0","path":"rooms/rm_gathering01/rm_gathering01.yy",},
     {"name":"inst_1F936A7C","path":"rooms/rm_gathering01/rm_gathering01.yy",},
     {"name":"inst_101D0454","path":"rooms/rm_gathering01/rm_gathering01.yy",},
     {"name":"inst_201EE9AB","path":"rooms/rm_gathering01/rm_gathering01.yy",},
@@ -76,15 +74,11 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1312.0,"y":512.0,},
         {"$GMRInstance":"v1","%Name":"inst_2B17B20E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B17B20E","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"spawn_location","path":"objects/obj_player/obj_player.yy",},"resource":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_door",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":128.0,"y":864.0,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":576.0,"y":512.0,},
         {"$GMRInstance":"v1","%Name":"inst_201EE9AB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_201EE9AB","objectId":{"name":"obj_fountain","path":"objects/obj_fountain/obj_fountain.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.2091839,"scaleY":1.2091839,"x":963.0,"y":515.0,},
         {"$GMRInstance":"v1","%Name":"inst_4DC75FB1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4DC75FB1","objectId":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.5203253,"x":1760.0,"y":512.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRInstanceLayer":"","%Name":"Shadow","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_281FC8B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_281FC8B","objectId":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":160.0,},
-        {"$GMRInstance":"v1","%Name":"inst_FB483F0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_FB483F0","objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":64.0,},
-      ],"layers":[],"name":"Shadow","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],
   "name":"rm_gathering01",
   "parent":{
@@ -104,7 +98,7 @@
   "roomSettings":{
     "Height":1080,
     "inheritRoomSettings":false,
-    "persistent":true,
+    "persistent":false,
     "Width":1920,
   },
   "sequenceId":null,
