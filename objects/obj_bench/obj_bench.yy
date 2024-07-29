@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_block",
-    "path":"sprites/spr_block/spr_block.yy",
+    "name":"spr_bench",
+    "path":"sprites/spr_bench/spr_bench.yy",
   },
   "spriteMaskId":null,
   "visible":true,
