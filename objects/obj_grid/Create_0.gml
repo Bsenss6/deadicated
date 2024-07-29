@@ -8,33 +8,7 @@ enum STAT_ID {
 	RICHNESS,	// 4
 }
 
-cell_number_x = 6;
-cell_number_y = 6;
 cell_size = 64;
-
-
-/* cell content code:
-0: empty
-1: occupied
-*/
-cells = [
-	[0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0],
-	[0, 0, 0, 0, 0, 0],
-];
-
-/* stat arrays:
-[name, target, current]
-*/
-stats = array_create(5);
-stats[STAT_ID.BRILLIANCE] = ["Brilliance", 0, 0];
-stats[STAT_ID.MAGIC] =		["Magic",      0, 0];
-stats[STAT_ID.PURITY] =		["Purity",     0, 0];
-stats[STAT_ID.LIFE]	=		["Life",       0, 0];
-stats[STAT_ID.RICHNESS] =	["Richness",   0, 0];
 
 
 /// @param _stat_id {STAT_ID} the id of the stat to update
@@ -64,3 +38,31 @@ function remove_stats(_stats)
 		stats[_i][2] -= _stats[_i];
 	}
 }
+
+
+#region Variables to override
+
+/* cell content code:
+0: empty
+1: occupied
+*/
+cells = [
+	[0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0],
+	[0, 0, 0, 0, 0, 0],
+];
+
+/* stat arrays:
+[name, target, current]
+*/
+stats = array_create(5);
+stats[STAT_ID.BRILLIANCE] = ["Brilliance", 0, 0];
+stats[STAT_ID.MAGIC] =		["Magic",      0, 0];
+stats[STAT_ID.PURITY] =		["Purity",     0, 0];
+stats[STAT_ID.LIFE]	=		["Life",       0, 0];
+stats[STAT_ID.RICHNESS] =	["Richness",   0, 0];
+
+#endregion
