@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"MUS_Alchemy",
+  "%Name":"snd_mus_alchemy",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":67.0,
-  "name":"MUS_Alchemy",
+  "name":"snd_mus_alchemy",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"MUS_Alchemy.wav",
+  "soundFile":"snd_mus_alchemy.wav",
   "type":1,
   "volume":1.0,
 }

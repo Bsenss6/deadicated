@@ -17,3 +17,6 @@ cells = [
 	[0, 0, 0, 0, 0, 0],
 	[0, 0, 0, 0, 0, 0],
 ];
+
+// music
+audio_play_sound(snd_mus_alchemy, 100, true, 1);
