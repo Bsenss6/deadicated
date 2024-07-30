@@ -42,7 +42,7 @@ if (object_exists(obj_player)) {
 	draw_sprite_ext(spr_arrow, 0,
 					obj_camera.view_width - path_radius * 2, obj_camera.view_height - path_radius * 2,
 					0.7, 0.7, 
-					-radtodeg(rad), 
+					-radtodeg(rad + pi/2), 
 					c_white,
 					0.7);
 }
