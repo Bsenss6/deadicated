@@ -27,13 +27,15 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"sprite_index","filters":[],"listItems":[],"multiselect":false,"name":"sprite_index","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_grid",
-    "path":"sprites/spr_grid/spr_grid.yy",
+    "name":"spr_grid_large",
+    "path":"sprites/spr_grid_large/spr_grid_large.yy",
   },
   "spriteMaskId":null,
   "visible":true,

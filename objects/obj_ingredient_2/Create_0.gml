@@ -1,10 +1,10 @@
-/// @description Define custom child's behavior
+/// @description Insert description here
+// You can write your code in this editor
 
 // Inherit the parent event
 event_inherited();
 
-// Define the child's variables
-
+stats = [0, 0, 1, 1, 1];
 ingredient_cells = [
 	[1, 1, 0],
 	[0, 1, 1],

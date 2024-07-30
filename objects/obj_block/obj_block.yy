@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_block",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_block",
   "overriddenProperties":[],
@@ -42,5 +40,5 @@
     "path":"sprites/spr_block/spr_block.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

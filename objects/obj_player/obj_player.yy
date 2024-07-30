@@ -4,7 +4,6 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_shadow","path":"objects/obj_shadow/obj_shadow.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":82,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
@@ -31,6 +30,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"spawn_location","filters":[],"listItems":[],"multiselect":false,"name":"spawn_location","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"invincible","filters":[],"listItems":[],"multiselect":false,"name":"invincible","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
@@ -39,6 +39,9 @@
     "name":"spr_player",
     "path":"sprites/spr_player/spr_player.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_player",
+    "path":"sprites/spr_player/spr_player.yy",
+  },
   "visible":true,
 }

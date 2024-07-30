@@ -6,7 +6,9 @@
   ],
   "managed":true,
   "name":"obj_fountain",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_object_parent","path":"objects/obj_object_parent/obj_object_parent.yy",},"propertyId":{"name":"isCircle","path":"objects/obj_object_parent/obj_object_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+  ],
   "parent":{
     "name":"Blocks",
     "path":"folders/Objects/Blocks.yy",
