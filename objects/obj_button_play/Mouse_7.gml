@@ -5,4 +5,4 @@
 event_inherited();
 
 //room_goto(rm_lobby);
-room_goto(rm_recipe_book);
+room_goto(rm_lobby);

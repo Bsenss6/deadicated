@@ -228,7 +228,7 @@ alchemy_rooms_data = [
 		],
 	},
 	{
-		recipe_name: "Healing Mercury",
+		recipe_name: "Curing Mercury",
 		stat_targets: [0, 0, 12, 8, 14],
 		grid_sprite: spr_grid_large,
 		grid_cells: [
