@@ -34,6 +34,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"custom_rad","filters":[],"listItems":[],"multiselect":false,"name":"custom_rad","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15*pi/8","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"sun_speed","filters":[],"listItems":[],"multiselect":false,"name":"sun_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.02","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
