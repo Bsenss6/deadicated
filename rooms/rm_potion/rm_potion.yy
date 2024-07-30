@@ -15,7 +15,7 @@
     {"name":"inst_7F843C6C","path":"rooms/rm_potion/rm_potion.yy",},
     {"name":"inst_6599BB4A","path":"rooms/rm_potion/rm_potion.yy",},
     {"name":"inst_384B4452","path":"rooms/rm_potion/rm_potion.yy",},
-    {"name":"inst_509E3127","path":"rooms/rm_potion/rm_potion.yy",},
+    {"name":"inst_6197F2B","path":"rooms/rm_potion/rm_potion.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -38,9 +38,7 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":896.0,},
         {"$GMRInstance":"v1","%Name":"inst_6599BB4A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6599BB4A","objectId":{"name":"obj_ingredient_1","path":"objects/obj_ingredient_1/obj_ingredient_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1472.0,"y":256.0,},
         {"$GMRInstance":"v1","%Name":"inst_384B4452","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_384B4452","objectId":{"name":"obj_ingredient_2","path":"objects/obj_ingredient_2/obj_ingredient_2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1472.0,"y":608.0,},
-        {"$GMRInstance":"v1","%Name":"inst_509E3127","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_509E3127","objectId":{"name":"obj_button_back","path":"objects/obj_button_back/obj_button_back.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_back","path":"objects/obj_button_back/obj_button_back.yy",},"propertyId":{"name":"room_id","path":"objects/obj_button_back/obj_button_back.yy",},"resource":{"name":"rm_recipe_book","path":"rooms/rm_recipe_book/rm_recipe_book.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_recipe_book",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":80.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6197F2B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6197F2B","objectId":{"name":"obj_button_back_potion","path":"objects/obj_button_back_potion/obj_button_back_potion.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":80.0,},
       ],"layers":[],"name":"LayerIngredientsStill","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"LayerGrid","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_296E883F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_296E883F","objectId":{"name":"obj_grid","path":"objects/obj_grid/obj_grid.yy",},"properties":[

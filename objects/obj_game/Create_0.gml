@@ -181,93 +181,6 @@ stats_names = [
 	"Richness",
 ];
 
-alchemy_rooms_data = [
-	{
-		recipe_name: "",
-		stat_targets: [0, 0, 0, 0, 0],
-		grid_sprite: noone,
-		grid_cells: [[0]],
-	},
-	{
-		recipe_name: "Crystaline Water",
-		stat_targets: [0, 4, 2, 0, 4],
-		grid_sprite: spr_grid_small,
-		grid_cells: [
-			[1, 1, 1, 1, 1, 1],
-			[1, 0, 0, 1, 0, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 1, 1, 1, 1, 1],
-		],
-	},
-	{
-		recipe_name: "Silver",
-		stat_targets: [2, 0, 2, 0, 4],
-		grid_sprite: spr_grid_small,
-		grid_cells: [
-			[1, 1, 1, 1, 1, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 0, 0, 1, 0, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 1, 1, 1, 1, 1],
-		],
-	},
-	{
-		recipe_name: "Mandragore",
-		stat_targets: [0, 2, 0, 3, 3],
-		grid_sprite: spr_grid_small,
-		grid_cells: [
-			[1, 1, 1, 1, 1, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 0, 0, 0, 0, 1],
-			[1, 1, 1, 1, 1, 1],
-		],
-	},
-	{
-		recipe_name: "Curing Mercury",
-		stat_targets: [0, 0, 12, 8, 14],
-		grid_sprite: spr_grid_large,
-		grid_cells: [
-			[1, 0, 0, 0, 0, 1],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[1, 0, 0, 0, 0, 1],
-		],
-	},
-	{
-		recipe_name: "Moonstone",
-		stat_targets: [0, 7, 7, 0, 13],
-		grid_sprite: spr_grid_large,
-		grid_cells: [
-			[1, 0, 0, 0, 0, 1],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[1, 0, 0, 0, 0, 1],
-		],
-	},
-	{
-		recipe_name: "Philosopher Stone",
-		stat_targets: [10, 12, 0, 0, 16],
-		grid_sprite: spr_grid_large,
-		grid_cells: [
-			[1, 0, 0, 0, 0, 1],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[0, 0, 0, 0, 0, 0],
-			[1, 0, 0, 0, 0, 1],
-		],
-	},
-];
-
 enum ALCHEMY_RECIPES {
 	NONE,				// 0
 	CRYSTALINE_WATER,	// 1
@@ -278,7 +191,111 @@ enum ALCHEMY_RECIPES {
 	PHILOSOPHER_STONE,	// 6
 }
 
+alchemy_rooms_data = array_create(7);
+alchemy_rooms_data[ALCHEMY_RECIPES.NONE] = {
+	recipe_name: "",
+	stat_targets: [0, 0, 0, 0, 0],
+	grid_sprite: noone,
+	grid_cells: [[0]],
+};
+alchemy_rooms_data[ALCHEMY_RECIPES.CRYSTALINE_WATER] = {
+	recipe_name: "Crystaline Water",
+	stat_targets: [0, 4, 2, 0, 4],
+	grid_sprite: spr_grid_small,
+	grid_cells: [
+		[1, 1, 1, 1, 1, 1],
+		[1, 0, 0, 1, 0, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 1, 1, 1, 1, 1],
+	],
+};
+alchemy_rooms_data[ALCHEMY_RECIPES.SILVER] = {
+	recipe_name: "Silver",
+	stat_targets: [2, 0, 2, 0, 4],
+	grid_sprite: spr_grid_small,
+	grid_cells: [
+		[1, 1, 1, 1, 1, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 0, 0, 1, 0, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 1, 1, 1, 1, 1],
+	],
+};
+alchemy_rooms_data[ALCHEMY_RECIPES.MANDRAGORE] = {
+	recipe_name: "Mandragore",
+	stat_targets: [0, 2, 0, 3, 3],
+	grid_sprite: spr_grid_small,
+	grid_cells: [
+		[1, 1, 1, 1, 1, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 0, 0, 0, 0, 1],
+		[1, 1, 1, 1, 1, 1],
+	],
+};
+alchemy_rooms_data[ALCHEMY_RECIPES.HEALING_MERCURY] = {
+	recipe_name: "Curing Mercury",
+	stat_targets: [0, 0, 12, 8, 14],
+	grid_sprite: spr_grid_large,
+	grid_cells: [
+		[1, 0, 0, 0, 0, 1],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[1, 0, 0, 0, 0, 1],
+	],
+};
+alchemy_rooms_data[ALCHEMY_RECIPES.MOONSTONE] = {
+	recipe_name: "Moonstone",
+	stat_targets: [0, 7, 7, 0, 13],
+	grid_sprite: spr_grid_large,
+	grid_cells: [
+		[1, 0, 0, 0, 0, 1],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[1, 0, 0, 0, 0, 1],
+	],
+};
+alchemy_rooms_data[ALCHEMY_RECIPES.PHILOSOPHER_STONE] = {
+	recipe_name: "Philosopher Stone",
+	stat_targets: [10, 12, 0, 0, 16],
+	grid_sprite: spr_grid_large,
+	grid_cells: [
+		[1, 0, 0, 0, 0, 1],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[0, 0, 0, 0, 0, 0],
+		[1, 0, 0, 0, 0, 1],
+	],
+};
+
 current_alchemy_recipe = ALCHEMY_RECIPES.NONE;
+
+#region Getters for recipe data
+
+function get_recipe_name(_recipe_index) {
+	return alchemy_rooms_data[_recipe_index].recipe_name;
+}
+
+function get_stat_targets(_recipe_index) {
+	return alchemy_rooms_data[_recipe_index].stat_targets;
+}
+
+function get_grid_sprite(_recipe_index) {
+	return alchemy_rooms_data[_recipe_index].grid_sprite;
+}
+
+function get_grid_cells(_recipe_index) {
+	return alchemy_rooms_data[_recipe_index].grid_cells;
+}
 
 function get_current_recipe_name() {
 	return get_recipe_name(current_alchemy_recipe);
@@ -296,20 +313,50 @@ function get_current_grid_cells() {
 	return get_grid_cells(current_alchemy_recipe);
 }
 
-function get_recipe_name(_recipe_index) {
-	return alchemy_rooms_data[_recipe_index].recipe_name;
+#endregion
+
+completed_recipes = array_create(7, false);
+unlocked_recipes = array_create(7, false);
+unlocked_recipes[ALCHEMY_RECIPES.CRYSTALINE_WATER] = true;
+unlocked_recipes[ALCHEMY_RECIPES.SILVER] = true;
+unlocked_recipes[ALCHEMY_RECIPES.MANDRAGORE] = true;
+
+#region Accessors for recipe progression
+
+function set_recipe_complete(_recipe_index) {
+	if (_recipe_index == ALCHEMY_RECIPES.NONE) {
+		return;
+	}
+
+	completed_recipes[_recipe_index] = true;
+
+	if (completed_recipes[ALCHEMY_RECIPES.CRYSTALINE_WATER] &&
+		completed_recipes[ALCHEMY_RECIPES.SILVER])
+	{
+		unlocked_recipes[ALCHEMY_RECIPES.MOONSTONE] = true;
+	}
+
+	if (completed_recipes[ALCHEMY_RECIPES.SILVER] &&
+		completed_recipes[ALCHEMY_RECIPES.MANDRAGORE])
+	{
+		unlocked_recipes[ALCHEMY_RECIPES.HEALING_MERCURY] = true;
+	}
+
+	if (completed_recipes[ALCHEMY_RECIPES.HEALING_MERCURY] &&
+		completed_recipes[ALCHEMY_RECIPES.MOONSTONE])
+	{
+		unlocked_recipes[ALCHEMY_RECIPES.PHILOSOPHER_STONE] = true;
+	}
 }
 
-function get_stat_targets(_recipe_index) {
-	return alchemy_rooms_data[_recipe_index].stat_targets;
+function set_current_recipe_complete() {
+	set_recipe_complete(current_alchemy_recipe);
 }
 
-function get_grid_sprite(_recipe_index) {
-	return alchemy_rooms_data[_recipe_index].grid_sprite;
+function is_recipe_unlocked(_recipe_index) {
+	return unlocked_recipes[_recipe_index];
 }
 
-function get_grid_cells(_recipe_index) {
-	return alchemy_rooms_data[_recipe_index].grid_cells;
-}
+#endregion
 
 #endregion
