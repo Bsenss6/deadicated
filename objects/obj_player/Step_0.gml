@@ -13,9 +13,9 @@ if (player_death) {
 
 	if (move_x != 0 || move_y != 0) {
 		if (sign(move_y) == sign(-1)) {
-			sprite_index = spr_player_walk_up;
+			sprite_index = spr_walk_up;
 		} else if (sign(move_y) == sign(1)) {
-			sprite_index = spr_player_walk_down ;
+			sprite_index = spr_walk_down ;
 		} else {
 			sprite_index = spr_player_walk; 
 		}
