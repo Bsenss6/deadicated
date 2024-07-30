@@ -353,6 +353,10 @@ function set_current_recipe_complete() {
 	set_recipe_complete(current_alchemy_recipe);
 }
 
+function is_recipe_completed(_recipe_index) {
+	return completed_recipes[_recipe_index];
+}
+
 function is_recipe_unlocked(_recipe_index) {
 	return unlocked_recipes[_recipe_index];
 }
