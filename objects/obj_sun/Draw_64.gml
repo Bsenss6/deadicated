@@ -23,7 +23,6 @@ if (object_exists(obj_player)) {
 			break;
 		case sun_mode.movement_controlled:
 			if (obj_player.move_x == 0 && obj_player.move_y == 0) {
-				rad_step = 0.02;
 				rad += rad_step;
 			}
 			break;
@@ -34,12 +33,16 @@ if (object_exists(obj_player)) {
 
 	//draw_sprite(spr_sun,0, x, y)
 
-	draw_sprite(spr_compass, 0, 
-				obj_camera.view_width - path_radius * 2, obj_camera.view_height - path_radius * 2);
-	draw_sprite_ext(spr_sun, 0,
-					x, y, 
-					0.2, 0.2, 
+	draw_sprite_ext(spr_compass, 0, 
+					obj_camera.view_width - path_radius * 2, obj_camera.view_height - path_radius * 2,
+					0.5, 0.5, 
 					0, 
-					c_yellow, 
+					c_white, 
 					1);
+	draw_sprite_ext(spr_arrow, 0,
+					obj_camera.view_width - path_radius * 2, obj_camera.view_height - path_radius * 2,
+					0.7, 0.7, 
+					-radtodeg(rad), 
+					c_white,
+					0.7);
 }
