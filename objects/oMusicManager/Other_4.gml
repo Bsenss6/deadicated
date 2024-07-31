@@ -15,7 +15,7 @@ switch (room) {
 	case rm_gathering02:
 	case rm_gathering03:
 	case rm_gathering04:
-	case rm_gathering04:
+	case rm_gathering05:
 	case rm_gathering06:
 	case rm_test:
 		set_music_ingame(MUS_Exploration, 60, 60);
