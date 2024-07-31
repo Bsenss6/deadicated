@@ -30,3 +30,7 @@ placed = false;
 layer = layer_get_id("LayerIngredientsDragged");
 mouse_offset_x = (mouse_x - x);
 mouse_offset_y = (mouse_y - y);
+
+if (dragging == true && !audio_is_playing(SFX_Puzzle_Pickup)){
+		audio_play_sound(SFX_Puzzle_Pickup, 1, false, 1, 0, random_range(0.8, 1.2));
+}
