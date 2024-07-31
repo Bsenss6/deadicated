@@ -5,7 +5,7 @@
 event_inherited();
 
 if (isNext) {
-	if (obj_inventory_book.current_page == obj_inventory_book.page_total - 1) {
+	if (obj_inventory_book.current_page >= obj_inventory_book.page_total - 1) {
 		image_alpha = 0.2;
 	} else {
 		image_alpha = 1;
