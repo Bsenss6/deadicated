@@ -24,6 +24,6 @@ if (isCollision) {
 
 surface_reset_target();
 
-draw_set_alpha(0.5);
+//draw_set_alpha(0.5);
 draw_surface(text_surface, 0, 0);
 draw_set_alpha(1);
