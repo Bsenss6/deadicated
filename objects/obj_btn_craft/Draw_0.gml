@@ -1,6 +1,6 @@
 /// @description Draw button text
 
-if (!is_level_completed()) {
+if ((!is_level_completed()) || clicked) {
 	exit;
 }
 
