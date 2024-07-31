@@ -191,6 +191,13 @@ enum ALCHEMY_RECIPES {
 	PHILOSOPHER_STONE,	// 6
 }
 
+
+enum CELL_CONTENT {
+	FREE,			// 0
+	INVISIBLE,		// 1
+	UNAVAILABLE,	// 2
+	INGREDIENT,		// 3
+}
 alchemy_rooms_data = array_create(7);
 alchemy_rooms_data[ALCHEMY_RECIPES.NONE] = {
 	recipe_name: "",
@@ -204,7 +211,7 @@ alchemy_rooms_data[ALCHEMY_RECIPES.CRYSTALINE_WATER] = {
 	grid_sprite: spr_grid_small,
 	grid_cells: [
 		[1, 1, 1, 1, 1, 1],
-		[1, 0, 0, 1, 0, 1],
+		[1, 0, 0, 2, 0, 1],
 		[1, 0, 0, 0, 0, 1],
 		[1, 0, 0, 0, 0, 1],
 		[1, 0, 0, 0, 0, 1],
@@ -218,7 +225,7 @@ alchemy_rooms_data[ALCHEMY_RECIPES.SILVER] = {
 	grid_cells: [
 		[1, 1, 1, 1, 1, 1],
 		[1, 0, 0, 0, 0, 1],
-		[1, 0, 0, 1, 0, 1],
+		[1, 0, 0, 2, 0, 1],
 		[1, 0, 0, 0, 0, 1],
 		[1, 0, 0, 0, 0, 1],
 		[1, 1, 1, 1, 1, 1],

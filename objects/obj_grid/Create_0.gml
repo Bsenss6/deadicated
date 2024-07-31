@@ -1,6 +1,5 @@
 /// @description Initialize variables
 
-
 cell_size = 64;
 
 function update_level_completed()
@@ -54,3 +53,15 @@ level_completed = false;
 update_level_completed()
 
 #endregion
+
+// Place pre-occupied cells
+for (var _j = 0; _j < array_length(cells); _j++) {
+	for (var _i = 0; _i < array_length(cells); _i++) {
+		if (cells[_j][_i] == CELL_CONTENT.UNAVAILABLE) {
+			var _x = ((_i * cell_size) + x);
+			var _y = ((_j * cell_size) + y);
+			var _layer = layer_get_id("LayerIngredientsStill");
+			instance_create_layer(_x, _y, _layer, obj_ingr_unavailable);
+		}
+	}
+}
