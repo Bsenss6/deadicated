@@ -5,7 +5,7 @@
 event_inherited();
 
 if (isNext) {
-	if (obj_inventory_book.current_page < obj_inventory_book.total_page) {
+	if (obj_inventory_book.current_page < obj_inventory_book.page_total) {
 		obj_inventory_book.current_page++;	
 	}
 } else {
