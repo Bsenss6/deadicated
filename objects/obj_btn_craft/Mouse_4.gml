@@ -9,6 +9,8 @@ clicked = true;
 
 // Set game complete
 obj_game.set_current_recipe_complete();
+room_goto(rm_recipe_book);
+audio_play_sound(SFX_Potion_Complete, 0, false);
 
 
 // Add ingredient to inventory
@@ -35,4 +37,3 @@ var _x = (room_width / 2);
 var _y = room_height;
 
 instance_create_layer(_x, _y, _layer, obj_success);
-	

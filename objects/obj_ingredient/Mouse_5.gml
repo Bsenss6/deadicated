@@ -14,3 +14,4 @@ switch (rotation_stage) {
 
 rotation_stage = ((rotation_stage + 1) % 4);
 ingredient_cells = array_rotate(ingredient_cells);
+audio_play_sound(SFX_Ingredient_rotate, 0, false, 0.5, 0, random_range(0.8, 1.2));
