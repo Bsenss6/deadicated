@@ -76,13 +76,13 @@
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_6EC554D7_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EC554D7_3","objectId":{"name":"obj_sun","path":"objects/obj_sun/obj_sun.yy",},"properties":[
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_sun","path":"objects/obj_sun/obj_sun.yy",},"propertyId":{"name":"sun_speed","path":"objects/obj_sun/obj_sun.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.019",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_sun","path":"objects/obj_sun/obj_sun.yy",},"propertyId":{"name":"sun_speed","path":"objects/obj_sun/obj_sun.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.012",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.3,"scaleY":0.3,"x":960.0,"y":800.0,},
         {"$GMRInstance":"v1","%Name":"inst_F06D2A3_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_F06D2A3_3","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":288.0,},
         {"$GMRInstance":"v1","%Name":"inst_1F936A7C_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1F936A7C_3","objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interact_parent","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"propertyId":{"name":"room_id","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"resource":{"name":"rm_lobby","path":"rooms/rm_lobby/rm_lobby.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_lobby",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interact_parent","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"propertyId":{"name":"room_text","path":"objects/obj_interact_parent/obj_interact_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Exit to lobby",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":1856.0,"y":1152.0,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":0.4228951,"scaleY":0.42289507,"x":2031.8184,"y":1228.2762,},
         {"$GMRInstance":"v1","%Name":"inst_2B17B20E_3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B17B20E_3","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"propertyId":{"name":"spawn_location","path":"objects/obj_player/obj_player.yy",},"resource":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_door",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.2,"scaleY":0.2,"x":128.0,"y":864.0,},
@@ -174,7 +174,7 @@
   "roomSettings":{
     "Height":1600,
     "inheritRoomSettings":false,
-    "persistent":true,
+    "persistent":false,
     "Width":2300,
   },
   "sequenceId":null,

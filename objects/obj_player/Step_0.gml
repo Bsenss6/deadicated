@@ -2,8 +2,6 @@ if (player_death) {
 	move_x = 0;
 	move_y = 0;
 	sprite_index = spr_player_death;
-	image_xscale = 3;
-	image_yscale = 3;
 	
 } else {	//Determine if the player is going (right or left) or/and (up or down)
 	
