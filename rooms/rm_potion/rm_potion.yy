@@ -18,6 +18,7 @@
     {"name":"inst_28B3A29A","path":"rooms/rm_potion/rm_potion.yy",},
     {"name":"inst_1054BC9","path":"rooms/rm_potion/rm_potion.yy",},
     {"name":"inst_48E413F2","path":"rooms/rm_potion/rm_potion.yy",},
+    {"name":"inst_70F346B1","path":"rooms/rm_potion/rm_potion.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -59,6 +60,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_back","path":"objects/obj_button_back/obj_button_back.yy",},"propertyId":{"name":"room_id","path":"objects/obj_button_back/obj_button_back.yy",},"resource":{"name":"rm_recipe_book","path":"rooms/rm_recipe_book/rm_recipe_book.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_recipe_book",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button_parent","path":"objects/obj_button_parent/obj_button_parent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_button_parent/obj_button_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Back",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":80.0,},
+        {"$GMRInstance":"v1","%Name":"inst_70F346B1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_70F346B1","objectId":{"name":"obj_potion_text","path":"objects/obj_potion_text/obj_potion_text.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":608.0,"y":704.0,},
       ],"layers":[],"name":"LayerGrid","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_C200B0F","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_C200B0F","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_cauldron","path":"sprites/spr_cauldron/spr_cauldron.yy",},"x":960.0,"y":541.0,},
