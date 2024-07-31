@@ -206,9 +206,10 @@ alchemy_rooms_data[ALCHEMY_RECIPES.NONE] = {
 	grid_cells: [[0]],
 };
 alchemy_rooms_data[ALCHEMY_RECIPES.CRYSTALINE_WATER] = {
-	recipe_name: "Crystaline Water",
+	recipe_name: "Crystaline\nWater",
 	stat_targets: [0, 4, 2, 0, 4],
 	grid_sprite: spr_grid_small,
+	ingredient_sprite: spr_crystalline_water,
 	grid_cells: [
 		[1, 1, 1, 1, 1, 1],
 		[1, 0, 0, 2, 0, 1],
@@ -222,6 +223,7 @@ alchemy_rooms_data[ALCHEMY_RECIPES.SILVER] = {
 	recipe_name: "Silver",
 	stat_targets: [2, 0, 2, 0, 4],
 	grid_sprite: spr_grid_small,
+	ingredient_sprite: spr_silver,
 	grid_cells: [
 		[1, 1, 1, 1, 1, 1],
 		[1, 0, 0, 0, 0, 1],
@@ -235,6 +237,7 @@ alchemy_rooms_data[ALCHEMY_RECIPES.MANDRAGORE] = {
 	recipe_name: "Mandragore",
 	stat_targets: [0, 2, 0, 3, 3],
 	grid_sprite: spr_grid_small,
+	ingredient_sprite: spr_mandragore,
 	grid_cells: [
 		[1, 1, 1, 1, 1, 1],
 		[1, 0, 0, 0, 0, 1],
@@ -245,9 +248,10 @@ alchemy_rooms_data[ALCHEMY_RECIPES.MANDRAGORE] = {
 	],
 };
 alchemy_rooms_data[ALCHEMY_RECIPES.HEALING_MERCURY] = {
-	recipe_name: "Curing Mercury",
+	recipe_name: "Curing\nMercury",
 	stat_targets: [0, 0, 12, 8, 14],
 	grid_sprite: spr_grid_large,
+	ingredient_sprite: spr_mercury,
 	grid_cells: [
 		[1, 0, 0, 0, 0, 1],
 		[0, 0, 0, 0, 0, 0],
@@ -261,6 +265,7 @@ alchemy_rooms_data[ALCHEMY_RECIPES.MOONSTONE] = {
 	recipe_name: "Moonstone",
 	stat_targets: [0, 7, 7, 0, 13],
 	grid_sprite: spr_grid_large,
+	ingredient_sprite: spr_moonstone,
 	grid_cells: [
 		[1, 0, 0, 0, 0, 1],
 		[0, 0, 0, 0, 0, 0],
@@ -271,9 +276,10 @@ alchemy_rooms_data[ALCHEMY_RECIPES.MOONSTONE] = {
 	],
 };
 alchemy_rooms_data[ALCHEMY_RECIPES.PHILOSOPHER_STONE] = {
-	recipe_name: "Philosopher Stone",
+	recipe_name: "Philosopher\nStone",
 	stat_targets: [10, 12, 0, 0, 16],
 	grid_sprite: spr_grid_large,
+	ingredient_sprite: spr_philosopher_stone,
 	grid_cells: [
 		[1, 0, 0, 0, 0, 1],
 		[0, 0, 0, 0, 0, 0],
@@ -300,8 +306,16 @@ function get_grid_sprite(_recipe_index) {
 	return alchemy_rooms_data[_recipe_index].grid_sprite;
 }
 
+function get_ingredient_sprite(_recipe_index) {
+	return alchemy_rooms_data[_recipe_index].ingredient_sprite;
+}
+
 function get_grid_cells(_recipe_index) {
 	return alchemy_rooms_data[_recipe_index].grid_cells;
+}
+
+function get_current_recipe_id() {
+	return current_alchemy_recipe;
 }
 
 function get_current_recipe_name() {
@@ -314,6 +328,10 @@ function get_current_stat_targets() {
 
 function get_current_grid_sprite() {
 	return get_grid_sprite(current_alchemy_recipe);
+}
+
+function get_current_ingredient_sprite() {
+	return get_ingredient_sprite(current_alchemy_recipe);
 }
 
 function get_current_grid_cells() {
