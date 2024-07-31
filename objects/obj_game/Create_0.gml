@@ -304,6 +304,10 @@ function get_grid_cells(_recipe_index) {
 	return alchemy_rooms_data[_recipe_index].grid_cells;
 }
 
+function get_current_recipe_id() {
+	return current_alchemy_recipe;
+}
+
 function get_current_recipe_name() {
 	return get_recipe_name(current_alchemy_recipe);
 }
