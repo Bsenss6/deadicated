@@ -34,7 +34,3 @@ dragging = false;
 mouse_offset_x = 0;
 mouse_offset_y = 0;
 layer = layer_get_id("LayerIngredientsStill");
-
-if (!audio_is_playing(SFX_Puzzle_Placed_1 || SFX_Puzzle_Placed_2 ) && placed == true){
-		audio_play_sound(choose(SFX_Puzzle_Placed_1, SFX_Puzzle_Placed_2), 1, false, 0.4, 0, random_range(0.8, 1.2));
-}
