@@ -99,9 +99,6 @@
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"array_rotate","path":"scripts/array_rotate/array_rotate.yy",},},
     {"id":{"name":"print","path":"scripts/print/print.yy",},},
-<<<<<<< Updated upstream
-    {"id":{"name":"snd_mus_alchemy","path":"sounds/snd_mus_alchemy/snd_mus_alchemy.yy",},},
-=======
     {"id":{"name":"scrMusicFunctions","path":"scripts/scrMusicFunctions/scrMusicFunctions.yy",},},
     {"id":{"name":"AMB_Cauldron","path":"sounds/AMB_Cauldron/AMB_Cauldron.yy",},},
     {"id":{"name":"MUS_Alchemy","path":"sounds/MUS_Alchemy/MUS_Alchemy.yy",},},
@@ -124,7 +121,7 @@
     {"id":{"name":"SFX_UI_Back","path":"sounds/SFX_UI_Back/SFX_UI_Back.yy",},},
     {"id":{"name":"SFX_UI_Hover","path":"sounds/SFX_UI_Hover/SFX_UI_Hover.yy",},},
     {"id":{"name":"SFX_UI_Select","path":"sounds/SFX_UI_Select/SFX_UI_Select.yy",},},
->>>>>>> Stashed changes
+    {"id":{"name":"snd_mus_alchemy","path":"sounds/snd_mus_alchemy/snd_mus_alchemy.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"spr_background_alchemy","path":"sprites/spr_background_alchemy/spr_background_alchemy.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
