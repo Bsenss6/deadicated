@@ -104,6 +104,7 @@
     {"id":{"name":"rm_gathering02","path":"rooms/rm_gathering02/rm_gathering02.yy",},},
     {"id":{"name":"rm_gathering03","path":"rooms/rm_gathering03/rm_gathering03.yy",},},
     {"id":{"name":"rm_gathering04","path":"rooms/rm_gathering04/rm_gathering04.yy",},},
+    {"id":{"name":"rm_gathering05","path":"rooms/rm_gathering05/rm_gathering05.yy",},},
     {"id":{"name":"rm_lobby","path":"rooms/rm_lobby/rm_lobby.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"rm_potion","path":"rooms/rm_potion/rm_potion.yy",},},
@@ -245,6 +246,7 @@
     {"roomId":{"name":"rm_gathering03","path":"rooms/rm_gathering03/rm_gathering03.yy",},},
     {"roomId":{"name":"rm_gathering04","path":"rooms/rm_gathering04/rm_gathering04.yy",},},
     {"roomId":{"name":"rm_story_end","path":"rooms/rm_story_end/rm_story_end.yy",},},
+    {"roomId":{"name":"rm_gathering05","path":"rooms/rm_gathering05/rm_gathering05.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
