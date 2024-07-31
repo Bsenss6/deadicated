@@ -136,6 +136,7 @@
     {"id":{"name":"SFX_UI_Hover","path":"sounds/SFX_UI_Hover/SFX_UI_Hover.yy",},},
     {"id":{"name":"SFX_UI_Select","path":"sounds/SFX_UI_Select/SFX_UI_Select.yy",},},
     {"id":{"name":"snd_mus_alchemy","path":"sounds/snd_mus_alchemy/snd_mus_alchemy.yy",},},
+    {"id":{"name":"snd_mus_story_start","path":"sounds/snd_mus_story_start/snd_mus_story_start.yy",},},
     {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"spr_background_alchemy","path":"sprites/spr_background_alchemy/spr_background_alchemy.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
