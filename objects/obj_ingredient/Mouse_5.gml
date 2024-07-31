@@ -1,6 +1,6 @@
 /// @description Rotate the piece
 
-if (dragging || placed || is_mouse_click_ignored())
+if (placed || is_mouse_click_ignored()) //dragging || 
 {
 	return;
 }
