@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+image_alpha = 0;
+
 function findSprite(item) {
 	switch (item) {
 		case 0:

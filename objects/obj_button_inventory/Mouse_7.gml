@@ -5,11 +5,13 @@
 event_inherited();
 
 if (isNext) {
-	if (obj_inventory_book.current_page < obj_inventory_book.page_total) {
+	if (obj_inventory_book.current_page < obj_inventory_book.page_total - 1) {
 		obj_inventory_book.current_page++;	
+		obj_inventory_book.resetDrawAmount();
 	}
 } else {
-	if (obj_inventory_book.current_page < 0) {
+	if (obj_inventory_book.current_page > 0) {
 		obj_inventory_book.current_page--;
+		obj_inventory_book.resetDrawAmount();
 	}
 }

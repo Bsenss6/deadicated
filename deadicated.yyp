@@ -138,6 +138,7 @@
     {"id":{"name":"spr_bush_0","path":"sprites/spr_bush_0/spr_bush_0.yy",},},
     {"id":{"name":"spr_bush_1","path":"sprites/spr_bush_1/spr_bush_1.yy",},},
     {"id":{"name":"spr_bush_2","path":"sprites/spr_bush_2/spr_bush_2.yy",},},
+    {"id":{"name":"spr_button_triangle","path":"sprites/spr_button_triangle/spr_button_triangle.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_cauldron","path":"sprites/spr_cauldron/spr_cauldron.yy",},},
     {"id":{"name":"spr_cell_ingredient_1_rot1","path":"sprites/spr_cell_ingredient_1_rot1/spr_cell_ingredient_1_rot1.yy",},},
