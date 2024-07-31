@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"alchemy",
-    "path":"folders/Sprites/alchemy.yy",
+    "name":"ui",
+    "path":"folders/Sprites/alchemy/ui.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
