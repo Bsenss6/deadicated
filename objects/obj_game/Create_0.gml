@@ -75,6 +75,17 @@ function isItemPresent(inv, item) {
 	return (inv[item] != 0?true:false);
 }
 
+inf_ingredients_clicked = false;
+function get_infinite_ingredients_available() {
+	return !inf_ingredients_clicked;
+}
+function set_infinite_ingredients(inv) {
+	inf_ingredients_clicked = true;
+	for (var i = 0; i < 12; ++i) {
+	    inv[i] = 999;
+	}
+}
+
 //function intToEnum(num) {
 //	switch (num) {
 //		case 0:

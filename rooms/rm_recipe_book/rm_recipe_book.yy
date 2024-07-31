@@ -13,6 +13,7 @@
     {"name":"inst_6B4A393D","path":"rooms/rm_recipe_book/rm_recipe_book.yy",},
     {"name":"inst_1B9FD388","path":"rooms/rm_recipe_book/rm_recipe_book.yy",},
     {"name":"inst_17A9653","path":"rooms/rm_recipe_book/rm_recipe_book.yy",},
+    {"name":"inst_178B18F1","path":"rooms/rm_recipe_book/rm_recipe_book.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -38,6 +39,7 @@
         {"$GMRInstance":"v1","%Name":"inst_17A9653","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17A9653","objectId":{"name":"obj_btn_recipe","path":"objects/obj_btn_recipe/obj_btn_recipe.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_btn_recipe","path":"objects/obj_btn_recipe/obj_btn_recipe.yy",},"propertyId":{"name":"recipe_index","path":"objects/obj_btn_recipe/obj_btn_recipe.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":784.0,"y":240.0,},
+        {"$GMRInstance":"v1","%Name":"inst_178B18F1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_178B18F1","objectId":{"name":"obj_button_inf_ingredients","path":"objects/obj_button_inf_ingredients/obj_button_inf_ingredients.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1600.0,"y":192.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_4E9C585C","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_4E9C585C","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_recipe_book_map","path":"sprites/spr_recipe_book_map/spr_recipe_book_map.yy",},"x":0.0,"y":0.0,},
