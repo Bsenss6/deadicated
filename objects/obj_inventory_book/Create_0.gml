@@ -6,14 +6,8 @@ left_x = 1444;
 first_y = 200;
 different_item = obj_game.getDifferentItems(obj_game.inventory_amounts);
 page_total = different_item div items_per_page;
-print(different_item);
-print(page_total);
 current_page = 0;
-
-first_item_drawn = -1;
-second_item_drawn = -1;
 item_drawn_amount = 0;
-item_check_amount = 0;
 i = 1
 
 
