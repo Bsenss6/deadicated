@@ -6,7 +6,7 @@ if (musicAsset != targetMusicAsset) {
 	//Tell the old music to fade out
 	if audio_is_playing(musicInstance){
 		//add musicInstance to our array of songs to fade out
-		array_push(fadeOutInstances, musicInstance)
+		array_push(fadeOutInstances, musicInstance);
 		//add musicInstance<s starting volume (so there's no abrupt change in volume)
 		array_push(fadeOutInstVol, fadeInInstVol);
 		//add the fadeOutInstances's fade out frames
