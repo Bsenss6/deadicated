@@ -1,6 +1,6 @@
 /// @description Go to room
 
-if (!unlocked) {
+if ((!unlocked) || completed) {
 	exit;
 }
 
