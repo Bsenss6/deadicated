@@ -5,7 +5,8 @@ if musicAsset != targetMusicAsset
 {
 	
 	//Tell the old music to fade out
-	if audio_is_playing(musicInstance){
+	if audio_is_playing(musicInstance)
+	{
 		//add musicInstance to our array of songs to fade out
 		array_push(fadeOutInstances, musicInstance)
 		//add musicInstance<s starting volume (so there's no abrupt change in volume)
@@ -20,11 +21,13 @@ if musicAsset != targetMusicAsset
 	
 	
 	//Play the music, if the old music has faded out
-	if array_length(fadeOutInstances) == 0{
+	if array_length(fadeOutInstances) == 0 
+	{
 		
-		if audio_exists(targetMusicAsset){
+		if audio_exists(targetMusicAsset)
+		{
 		//Play the music and store it<s instance in a variable
-		musicInstance = audio_play_sound(targetMusicAsset, 0, true);
+		musicInstance = audio_play_sound(targetMusicAsset, 4, true);
 	
 		audio_sound_gain(musicInstance, 0, 0);
 		fadeInInstVol = 0;
@@ -51,17 +54,17 @@ if musicAsset != targetMusicAsset
 			fadeInInstVol = 1;
 		}
 		//set the gain
-		audio_sound_gain(musicInstance, fadeInInstVol*global.musicVolume, 0);
+		audio_sound_gain(musicInstance, fadeInInstVol*_finalVol, 0);
 	}
 	
 	
 	//Fading musics out
 	for (var i = 0; i < array_length(fadeOutInstances); i++){
 		//Fade the volume
-		if fadeOutInstTime[i] > 0 {
-			if fadeOutInstVol[i] > 0 {
-				fadeOutInstVol[i] -= 1/fadeOutInstTime;
-			}
+		if fadeOutInstTime[i] > 0 
+		{
+			if fadeOutInstVol[i] > 0 { fadeOutInstVol[i] -= 1/fadeOutInstTime[i];};
+			
 		
 		//Cut volume to 0 otherwise
 		}else{
