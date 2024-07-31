@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_ingr_stardust1",
   "bboxMode":0,
-  "bbox_bottom":257,
+  "bbox_bottom":128,
   "bbox_left":0,
-  "bbox_right":257,
+  "bbox_right":128,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":258,
+  "height":129,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"ecd21336-ed7a-4670-b9fd-fc11c26a420c","blendMode":0,"displayName":"default","isLocked":false,"name":"ecd21336-ed7a-4670-b9fd-fc11c26a420c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":258,
+  "width":129,
 }

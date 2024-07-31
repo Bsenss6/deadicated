@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_ingr_water2",
   "bboxMode":0,
-  "bbox_bottom":385,
+  "bbox_bottom":192,
   "bbox_left":0,
-  "bbox_right":257,
+  "bbox_right":128,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":386,
+  "height":193,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"4bb99af3-9536-41cd-9488-fed403eb5d83","blendMode":0,"displayName":"default","isLocked":false,"name":"4bb99af3-9536-41cd-9488-fed403eb5d83","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":258,
+  "width":129,
 }
