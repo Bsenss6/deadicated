@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"alchemy",
-    "path":"folders/Sprites/alchemy.yy",
+    "name":"ingredients",
+    "path":"folders/Sprites/alchemy/ingredients.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

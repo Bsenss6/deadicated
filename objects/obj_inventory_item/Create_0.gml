@@ -36,4 +36,46 @@ function findSprite(item) {
 	}
 }
 
+function findObject(item) {
+	switch (item) {
+		case 1:
+			return obj_ingr_mercury;
+		case 2:
+			return obj_ingr_moonstone;
+		case 3:
+			return obj_ingr_water;
+		case 4:
+			return obj_ingr_silver;
+		case 5:
+			return obj_ingr_mandragore;
+		case 6:
+			return obj_ingr_stardust;
+		case 7:
+			return obj_ingr_ice;
+		case 8:
+			return obj_ingr_fungus;
+		case 9:
+			return obj_ingr_comet;
+		case 10:
+			return obj_ingr_dragon;
+		case 11:
+			return obj_ingr_flame;
+		case 12:
+			return obj_ingr_mimicry;
+	}
+}
+
+/// @description Returns the cell-coordinates (0, 1, 2, etc.) of the first non-zero cell.
+function find_first_non_empty_cell(_cells) {
+	for (var _j = 0; _j < array_length(_cells); _j++) {
+		for (var _i = 0; _i < array_length(_cells[_j]); ++_i) {
+		    if (_cells[_j][_i] != 0) {
+				return { _x: _i, _y: _j };
+			}
+		}
+	}
+
+	return { _x: -1, _y: -1 };
+}
+
 sprite_index = findSprite(item_id);
