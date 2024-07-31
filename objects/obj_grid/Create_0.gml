@@ -37,6 +37,3 @@ stat_targets = obj_game.get_current_stat_targets();
 stat_current = [0, 0, 0, 0, 0];
 
 #endregion
-
-// music
-audio_play_sound(snd_mus_alchemy, 100, true, 1);
