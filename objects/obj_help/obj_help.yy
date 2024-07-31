@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_table",
-  "eventList":[],
+  "%Name":"obj_help",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_table",
+  "name":"obj_help",
   "overriddenProperties":[],
   "parent":{
-    "name":"Doors",
-    "path":"folders/Objects/Doors.yy",
+    "name":"rooms",
+    "path":"folders/Objects/rooms.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interact_parent",
-    "path":"objects/obj_interact_parent/obj_interact_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_table",
-    "path":"sprites/spr_table/spr_table.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
