@@ -216,7 +216,6 @@
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"rm_recipe_book","path":"rooms/rm_recipe_book/rm_recipe_book.yy",},},
     {"roomId":{"name":"rm_potion","path":"rooms/rm_potion/rm_potion.yy",},},
-    {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"roomId":{"name":"rm_gathering01","path":"rooms/rm_gathering01/rm_gathering01.yy",},},
     {"roomId":{"name":"rm_lobby","path":"rooms/rm_lobby/rm_lobby.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
