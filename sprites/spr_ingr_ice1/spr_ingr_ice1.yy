@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_ingr_ice1",
   "bboxMode":0,
-  "bbox_bottom":257,
+  "bbox_bottom":128,
   "bbox_left":0,
-  "bbox_right":385,
+  "bbox_right":192,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":258,
+  "height":129,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"7a2f9110-434e-4a84-a1b6-c6c5af617e61","blendMode":0,"displayName":"default","isLocked":false,"name":"7a2f9110-434e-4a84-a1b6-c6c5af617e61","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":386,
+  "width":193,
 }

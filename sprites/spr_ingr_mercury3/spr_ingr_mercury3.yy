@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_ingr_mercury3",
   "bboxMode":0,
-  "bbox_bottom":385,
+  "bbox_bottom":192,
   "bbox_left":0,
-  "bbox_right":385,
+  "bbox_right":192,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":386,
+  "height":193,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"a68ff850-5548-43a3-9d78-f1defee324dd","blendMode":0,"displayName":"default","isLocked":false,"name":"a68ff850-5548-43a3-9d78-f1defee324dd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":386,
+  "width":193,
 }

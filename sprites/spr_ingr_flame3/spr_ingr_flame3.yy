@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_ingr_flame3",
   "bboxMode":0,
-  "bbox_bottom":257,
+  "bbox_bottom":128,
   "bbox_left":0,
-  "bbox_right":257,
+  "bbox_right":128,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":258,
+  "height":129,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"0e85d0b8-adda-493d-ab46-f2d4f68509d5","blendMode":0,"displayName":"default","isLocked":false,"name":"0e85d0b8-adda-493d-ab46-f2d4f68509d5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":258,
+  "width":129,
 }
