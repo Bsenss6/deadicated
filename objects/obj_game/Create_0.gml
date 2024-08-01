@@ -274,7 +274,7 @@ alchemy_rooms_data[ALCHEMY_RECIPES.HEALING_MERCURY] = {
 };
 alchemy_rooms_data[ALCHEMY_RECIPES.MOONSTONE] = {
 	recipe_name: "Moonstone",
-	stat_targets: [0, 7, 7, 0, 13],
+	stat_targets: [7, 7, 0, 0, 13],
 	grid_sprite: spr_grid_large,
 	ingredient_sprite: spr_moonstone,
 	grid_cells: [
