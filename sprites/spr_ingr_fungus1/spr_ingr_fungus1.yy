@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_ingr_fungus1",
   "bboxMode":0,
-  "bbox_bottom":85,
+  "bbox_bottom":128,
   "bbox_left":0,
-  "bbox_right":128,
+  "bbox_right":192,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a532ddc7-e62b-4805-8767-9207d74fe84f","name":"a532ddc7-e62b-4805-8767-9207d74fe84f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"69faae0f-4d22-4791-8fd5-d15c96c7702d","name":"69faae0f-4d22-4791-8fd5-d15c96c7702d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":86,
+  "height":129,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"dd26f203-502e-47f3-9697-1db5cc3206f0","blendMode":0,"displayName":"default","isLocked":false,"name":"dd26f203-502e-47f3-9697-1db5cc3206f0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ca949470-c100-4a05-9804-c5ef8f9f5cd8","blendMode":0,"displayName":"default","isLocked":false,"name":"ca949470-c100-4a05-9804-c5ef8f9f5cd8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_ingr_fungus1",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a532ddc7-e62b-4805-8767-9207d74fe84f","path":"sprites/spr_ingr_fungus1/spr_ingr_fungus1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b276d08a-85a9-483b-9c5d-79a2f4e334e6","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"69faae0f-4d22-4791-8fd5-d15c96c7702d","path":"sprites/spr_ingr_fungus1/spr_ingr_fungus1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2cfc6690-1089-40ff-b810-94f9ced57ac4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":129,
+  "width":193,
 }
