@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_ingr_unavailable",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_ingr_unavailable",
   "overriddenProperties":[],
@@ -11,10 +9,7 @@
     "name":"ingredients",
     "path":"folders/Objects/alchemy/ingredients.yy",
   },
-  "parentObjectId":{
-    "name":"obj_ingredient",
-    "path":"objects/obj_ingredient/obj_ingredient.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
