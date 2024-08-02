@@ -322,7 +322,17 @@ function get_ingredient_sprite(_recipe_index) {
 }
 
 function get_grid_cells(_recipe_index) {
-	return alchemy_rooms_data[_recipe_index].grid_cells;
+	var _original = alchemy_rooms_data[_recipe_index].grid_cells;
+	var _length_j = array_length(_original);
+	var _copy = array_create(_length_j);
+	for (var _j = 0; _j < _length_j; _j++) {
+		var _length_i = array_length(_original[_j]);
+		_copy[_j] = array_create(_length_i);
+		for (var _i = 0; _i < _length_i; _i++) {
+			_copy[_j][_i] = _original[_j][_i];
+		}
+	}
+	return _copy;
 }
 
 function get_current_recipe_id() {
