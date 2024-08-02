@@ -72,18 +72,19 @@ function resetInventory(inv) {
 }
 
 function isItemPresent(inv, item) {
-	return (inv[item] != 0?true:false);
+	return (inv[item] != 0);
 }
 
 inf_ingredients_clicked = false;
 function get_infinite_ingredients_available() {
 	return !inf_ingredients_clicked;
 }
-function set_infinite_ingredients(inv) {
-	inf_ingredients_clicked = true;
-	for (var i = 0; i < 12; ++i) {
-	    inv[i] = 999;
+function set_infinite_ingredients() {
+	for (var _i = 1; _i < 13; ++_i) {
+	    inventory_temp[_i] = 999;
 	}
+	copyInventory(inventory_temp, inventory_amounts);
+	inf_ingredients_clicked = true;
 }
 
 //function intToEnum(num) {

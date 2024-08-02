@@ -4,5 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-var _inv = obj_game.inventory_amounts;
-obj_game.set_infinite_ingredients(_inv);
+obj_game.set_infinite_ingredients();
